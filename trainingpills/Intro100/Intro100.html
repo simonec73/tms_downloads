@@ -1,0 +1,365 @@
+<!doctype html>
+<!-- saved from url=(0027)http://www.helpxplain.com/ -->
+<!--
+
+Hey!
+Glad you take a look into the source, Dude... :-)
+
+                 This slideshow was made with
+.__           .__           ____  ___      .__         .__
+|  |__   ____ |  | ______   \   \/  /_____ |  | _____  |__| ____
+|  |  \_/ __ \|  | \____ \   \     /\____ \|  | \__  \ |  |/    \
+|   Y  \  ___/|  |_|  |_> >  /     \|  |_> >  |__/ __ \|  |   |  \
+|___|  /\___  >____/   __/  /___/\  \   __/|____(____  /__|___|  /
+     \/     \/     |__|           \_/__|             \/        \/
+
+HelpXplain is the cutting-edge graphics software, that
+creates interactive HTML5 and Javascript slideshows
+for the Web. No Flash here, believe us! Just standards-
+compliant HTML5 & CSS & Javascript. 100% responsive and
+100% cross-platform.
+
+Visit our website, download the trial and give it a run!
+You'll love it, promise.
+
+http://www.helpxplain.com
+
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Threats Manager Platform - Intro100 - Threat Model</title>
+<meta name="description" content="Introduction to Threat Models for Threats Manager Platform." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:title" content="Threats Manager Platform - Intro100 - Threat Model" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Introduction to Threat Models for Threats Manager Platform." />
+<meta property="og:site_name" content="Simone Curzi" />
+<meta property="og:image" content="./Intro100/preview.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta property="og:image:alt" content="Threats Manager Platform - Intro100 - Threat Model" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Threats Manager Platform - Intro100 - Threat Model" />
+<meta property="twitter:description" content="Introduction to Threat Models for Threats Manager Platform." />
+<meta property="twitter:creator" content="Simone Curzi" />
+<meta property="twitter:site" content="Simone Curzi" />
+<meta property="twitter:image" content="./Intro100/preview.jpg" />
+
+<link rel="icon" href="./Intro100/favicon.png" type="image/png">
+<style TYPE="text/css" media="screen">
+body {
+  font-family: Arial,sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+a { color: #0070C0 }
+
+p {
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3 {
+  line-height: 1.2em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+ul {
+  margin: 0 0 0 0.9em;
+  padding: 0;
+}
+ol {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  line-height: 1.2em;
+}
+
+
+
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+
+div#xplplayercontrols {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vH;
+	margin: 0;
+	opacity: 1;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerprogress {
+	display: block;
+}
+div#xplplayerprogress div {
+	position:absolute;
+	top: 0;
+	height: 1vH;
+	width: 0%;
+	background: #1072C5;
+}
+div#xplplayercontrols .button {
+	transition: transform 0.3s;
+}
+div#xplplayercontrols .button:hover {
+  transform: scale(1.1,1.1);
+}
+div#xplplayercontrols .button.disabled {
+	display: none;
+}
+div#xplplayercontrols svg {
+	display: inline-block;
+	width: 100%;
+}
+div#xplplayercontrols .xplplaybutton {
+  fill: #D80000;
+  stroke: none;
+}
+div#xplplayerplay {
+	margin: -60vH auto;
+	width: 20vH;
+	height: 20vH;
+	cursor: pointer;
+}
+div#xplplayerexit {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;  
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 7vH;
+}
+div#xplplayerexit .exitbutton {
+	margin:0;
+	padding: 0px;
+	opacity: 0.6;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerexit .exitbutton:hover {
+	opacity: 1;
+}
+div#xplplayerexit .replay {
+	cursor: pointer;
+}
+div#xplplayerexit p {
+	margin: 0 0 0.5em 0;
+}
+div#xplplayerexit div.replay svg {
+	width: 2em;
+	height: 2em;
+}
+a.sharebutton {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+}
+div#xplplayerloading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 32vH;
+  height: 32vH;
+  margin: -16vH 0 0 -16vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: #1072C5;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+</style>
+</head>
+<body style="background-color:#FFFFFF;position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden">
+<div id="xplbase" style="display:none;position:absolute;top:50%;left:50%;transform-origin:left top">
+<div id="xplcanvas" style="position:absolute">
+<div class="xplitem frame xplframe" id="slide2" data-scale="1" data-rotate="0" data-frameindex="0" data-framew="1024" data-frameh="683" data-framecx="-0.013" data-framecy="-1639.25" data-framer="0" data-frametrans="1" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.013px;top:-1980.75px;width:1024px;height:683px">
+<div class="xplitem image" id="image2" data-scale="1" data-rotate="0" style="position:absolute;left:0.0001px;top:-0.0006px;width:959.082px;height:683.463px"><img src="./Intro100/18.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem shape" id="rectangle1" data-scale="1" data-rotate="17.9256" style="position:absolute;left:638.878px;top:-42.6243px;width:329.535px;height:801.207px;transform: rotate(17.9256deg)"><svg style="position:absolute;overflow:visible" width="330" height="801" viewBox="0 0 330 801"><rect class="xplsvgpath" fill="#0173C7" fill-rule="evenodd" stroke="none" x="0" y="0" width="330" height="801"></rect></svg>
+</div>
+<div class="xplitem text" id="text1" data-scale="0.2" data-rotate="0" style="position:absolute;left:20.876px;top:477.103px;width:433.733px;height:44px;transform: scale(0.2,0.2)"><div style="width:433.733px;height:44px;transform:scale(5)"><p>Threats Manager Platform</p></div>
+</div>
+<div class="xplitem text" id="text2" data-scale="0.2" data-rotate="-8.8928" data-framein="0,fadein,0,0,0.5,0,,false" style="position:absolute;left:452.535px;top:502.592px;width:128.572px;height:60px;transform: scale(0.2,0.2) rotate(-8.8928deg)"><div style="width:128.572px;height:60px;transform:scale(5)"><p style="font-family:'Segoe Script';font-size:43px;color:#0173C7;">Pills</p></div>
+</div>
+<div class="xplitem text" id="text3" data-scale="0.2" data-rotate="0" data-framein="0,typetext,0,0,3,0.5,,false" style="position:absolute;left:22.0378px;top:521.171px;width:367.627px;height:39px;transform: scale(0.2,0.2)"><div style="width:367.627px;height:39px;transform:scale(5)"><p style="font-size:32px;">Threat Model</p></div>
+</div>
+<div class="xplitem image" id="background" data-scale="1" data-rotate="12.9205" style="position:absolute;left:673.714px;top:-37.0504px;width:487.147px;height:805.159px;transform: rotate(12.9205deg)"><img src="./Intro100/Background-clip007181187.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text29" data-scale="0.2" data-rotate="0" style="position:absolute;left:21.9663px;top:629.275px;width:571.559px;height:26px;transform: scale(0.2,0.2)"><div style="width:571.559px;height:26px;transform:scale(5)"><p style="font-size:21px;">You can use your keyboard to move between slides.&nbsp;</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide4" data-scale="1" data-rotate="0" data-frameindex="1" data-framew="1024" data-frameh="683" data-framecx="-0.013" data-framecy="-819.6299" data-framer="0" data-frametrans="1" data-frameshow="20" data-frameposition="fit" style="position:absolute;left:-512.013px;top:-1161.1299px;width:1024px;height:683px">
+<div class="xplitem text" id="text4" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,6,0.5,,false" style="position:absolute;left:91.0032px;top:42.2988px;width:830.486px;height:176px;transform: scale(0.2,0.2)"><div style="width:830.486px;height:176px;transform:scale(5)"><p>Threat Modeling is a process to understand potential <b>threat events</b> to a system, determine <b>risks</b> from those threats, and establish appropriate <b>mitigations</b>.</p></div>
+</div>
+<div class="xplitem image" id="image1" data-scale="1" data-rotate="0" style="position:absolute;left:1157.4px;top:402.872px;width:128px;height:128px"><img src="./Intro100/external_huge.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text6" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,1,7.5,,false" style="position:absolute;left:91.0033px;top:270.562px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Threat Events</p></div>
+</div>
+<div class="xplitem text" id="text7" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,4,9,,false" style="position:absolute;left:91.0034px;top:311.899px;width:780.62px;height:66px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:66px;transform:scale(5)"><p style="font-size:27px;">Potential attack scenarios to the system.</p><p style="font-size:27px;">Who performs those attack scenarios is called Threat Actor.</p></div>
+</div>
+<div class="xplitem text" id="text8" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,1,14,,false" style="position:absolute;left:91.0033px;top:394.273px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Risks</p></div>
+</div>
+<div class="xplitem text" id="text9" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,4,15.5,,false" style="position:absolute;left:91.0033px;top:436.481px;width:780.62px;height:66px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:66px;transform:scale(5)"><p style="font-size:27px;">Potential loss caused by the occurring of a Threat Event.</p><p style="font-size:27px;">It is typically expressed in monetary terms.</p></div>
+</div>
+<div class="xplitem text" id="text10" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,1,20.5,,false" style="position:absolute;left:91.0033px;top:522.112px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Mitigations</p></div>
+</div>
+<div class="xplitem text" id="text11" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,2.5,22,,false" style="position:absolute;left:91.0033px;top:563.148px;width:780.62px;height:33px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:33px;transform:scale(5)"><p style="font-size:27px;">Actions that may decrease the Risk associated to a Threat Event.</p></div>
+</div>
+<div class="xplitem line" id="line2" data-scale="1" data-rotate="0" data-framein="1,fadein,0,0,0.5,27.5,,false" style="position:absolute;left:297.191px;top:631.068px;width:494.829px;height:2px"><svg style="position:absolute;overflow:visible" width="495" height="2" viewBox="0 0 495 2"><path fill="none" stroke-linecap="square" stroke-width="2" stroke="#FFFFFF" d="M0,1 L494.829010009766,1 "></path></svg>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide5" data-scale="1" data-rotate="0" data-frameindex="2" data-framew="1024" data-frameh="683" data-framecx="-0.013" data-framecy="-0.0089" data-framer="0" data-frametrans="1" data-frameshow="20" data-frameposition="fit" style="position:absolute;left:-512.013px;top:-341.5089px;width:1024px;height:683px">
+<div class="xplitem text" id="text5" data-scale="0.2" data-rotate="0" data-framein="2,typetext,0,0,7,0.5,,false" style="position:absolute;left:91.9621px;top:42.2988px;width:830.486px;height:176px;transform: scale(0.2,0.2)"><div style="width:830.486px;height:176px;transform:scale(5)"><p>The goal of a Threat Model is to understand the risk represented by a system and identify potential mitigations that may be able to reconduct it at an acceptable level of risk.</p></div>
+</div>
+<div class="xplitem image" id="image3" data-scale="1" data-rotate="0" style="position:absolute;left:1157.4px;top:402.872px;width:128px;height:128px"><img src="./Intro100/external_huge.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text12" data-scale="0.2" data-rotate="0" data-framein="2,typetext,0,0,6,8.5,,false" style="position:absolute;left:90.0442px;top:265.266px;width:780.62px;height:176px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:176px;transform:scale(5)"><p>The determination of the best approach by selecting the actions to do Threat Event by Threat Event is a responsibility of the System Owners.</p></div>
+</div>
+<div class="xplitem line" id="line3" data-scale="1" data-rotate="0" data-framein="2,fadein,0,0,0.5,23,,false" style="position:absolute;left:297.191px;top:631.068px;width:494.829px;height:2px"><svg style="position:absolute;overflow:visible" width="495" height="2" viewBox="0 0 495 2"><path fill="none" stroke-linecap="square" stroke-width="2" stroke="#FFFFFF" d="M0,1 L494.829010009766,1 "></path></svg>
+</div>
+<div class="xplitem text" id="text20" data-scale="0.2" data-rotate="0" data-framein="2,typetext,0,0,5,15,,false" style="position:absolute;left:90.0443px;top:483.871px;width:780.62px;height:132px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:132px;transform:scale(5)"><p>The risk represented by the solution after having applied the selected approach is called&nbsp;<b>residual risk</b>.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide6" data-scale="1" data-rotate="0" data-frameindex="3" data-framew="1024" data-frameh="683" data-framecx="-0.013" data-framecy="819.6121" data-framer="0" data-frametrans="1" data-frameshow="20" data-frameposition="fit" style="position:absolute;left:-512.013px;top:478.1121px;width:1024px;height:683px">
+<div class="xplitem text" id="text13" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,6,0.5,,false" style="position:absolute;left:91.0013px;top:42.2986px;width:858.3px;height:154px;transform: scale(0.2,0.2)"><div style="width:858.3px;height:154px;transform:scale(5)"><p>The mitigation plan can be defined choosing among a number of options.</p><p><span style="font-size:27px">Please note that it is possible to pick a combination of those: for example, applying some mitigations and then accept the residual risk.</span></p></div>
+</div>
+<div class="xplitem image" id="image4" data-scale="1" data-rotate="0" style="position:absolute;left:1157.4px;top:402.872px;width:128px;height:128px"><img src="./Intro100/external_huge.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text14" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,2,7.5,,false" style="position:absolute;left:91.0032px;top:241.365px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Applying one or more Mitigations</p></div>
+</div>
+<div class="xplitem text" id="text15" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,2,10,,false" style="position:absolute;left:91.0031px;top:282.702px;width:780.62px;height:33px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:33px;transform:scale(5)"><p style="font-size:27px;">Favor standard, well-known mitigations to invented ones.</p></div>
+</div>
+<div class="xplitem text" id="text16" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,1,17.5,,false" style="position:absolute;left:91.0029px;top:419.299px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Transferring the Risk</p></div>
+</div>
+<div class="xplitem text" id="text17" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,3,19,,false" style="position:absolute;left:91.0029px;top:461.507px;width:780.62px;height:66px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:66px;transform:scale(5)"><p><span style="font-size:27px">It can be done by informing the users ad let them decide, or by taking an insurance.</span></p></div>
+</div>
+<div class="xplitem text" id="text18" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,1,23,,false" style="position:absolute;left:91.0031px;top:555.48px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Accepting the Risk</p></div>
+</div>
+<div class="xplitem text" id="text19" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,2,24.5,,false" style="position:absolute;left:91.0021px;top:596.515px;width:895.708px;height:33px;transform: scale(0.2,0.2)"><div style="width:895.708px;height:33px;transform:scale(5)"><p style="font-size:27px;">Actions that may decrease the Risk associated to a Threat Event.</p></div>
+</div>
+<div class="xplitem line" id="line4" data-scale="1" data-rotate="0" data-framein="3,fadein,0,0,0.5,29.5,,false" style="position:absolute;left:297.191px;top:631.068px;width:494.829px;height:2px"><svg style="position:absolute;overflow:visible" width="495" height="2" viewBox="0 0 495 2"><path fill="none" stroke-linecap="square" stroke-width="2" stroke="#FFFFFF" d="M0,1 L494.829010009766,1 "></path></svg>
+</div>
+<div class="xplitem text" id="text21" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,1,13,,false" style="position:absolute;left:91.0028px;top:328.178px;width:780.62px;height:44px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:44px;transform:scale(5)"><p>Redesign</p></div>
+</div>
+<div class="xplitem text" id="text22" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,2,14.5,,false" style="position:absolute;left:91.003px;top:369.515px;width:780.62px;height:33px;transform: scale(0.2,0.2)"><div style="width:780.62px;height:33px;transform:scale(5)"><p style="font-size:27px;">The risk can be totally averted if the feature is removed.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide24" data-scale="1" data-rotate="0" data-frameindex="4" data-framew="1024" data-frameh="683" data-framecx="-0.013" data-framecy="1639.2302" data-framer="0" data-frametrans="1" data-frameshow="0" data-frameposition="fit" style="position:absolute;left:-512.013px;top:1297.7302px;width:1024px;height:683px">
+<div class="xplitem image" id="image24" data-scale="1" data-rotate="0" style="position:absolute;left:0.0001px;top:-0.0006px;width:959.082px;height:683.463px"><img src="./Intro100/1-clip0020601468.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem shape" id="rectangle3" data-scale="1" data-rotate="17.9256" style="position:absolute;left:638.878px;top:-42.6243px;width:329.535px;height:801.207px;transform: rotate(17.9256deg)"><svg style="position:absolute;overflow:visible" width="330" height="801" viewBox="0 0 330 801"><rect class="xplsvgpath" fill="#0173C7" fill-rule="evenodd" stroke="none" x="0" y="0" width="330" height="801"></rect></svg>
+</div>
+<div class="xplitem image" id="background2" data-scale="1" data-rotate="12.9205" style="position:absolute;left:673.691px;top:-36.8971px;width:488.54px;height:805.196px;transform: rotate(12.9205deg)"><img src="./Intro100/Background2-clip007201187.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text33" data-scale="0.2" data-rotate="0" style="position:absolute;left:21.8459px;top:292.97px;width:515.079px;height:58px;transform: scale(0.2,0.2)"><div style="width:515.079px;height:58px;transform:scale(5)"><p style="font-size:48px;">Thank you for watching!</p></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="xplplayercontrols" data-overlay="1">
+<div id="xplplayerprogress"><div id="xplplayerprogressindicator"></div></div>
+<div id="xplplayerplay" class="button" onclick="xplain.play()" title="Play Slideshow">
+	<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#FFFFFF"></circle><circle class="xplplaybutton" cx="50" cy="50" r="46"></circle><path d="M40,72.5L70,50L40,27.45V72.5z" fill="#FFFFFF"></path></svg>
+</div>
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<div id="xplplayerexit">
+	<div style="margin:0;position:absolute;width:100%;top:50%;-ms-transform: translateY(-50%);transform: translateY(-50%)">
+		<div class="exitbutton replay" onclick="xplain.reload()">
+			<p>Reload</p>
+			<svg viewbox="0 0 100 100">
+				<path fill="#FFFFFF" d="M15.5190,46.4016 L0.5,30.33618 L9.7889,30.3361 C10.9691,13.6623 24.8848,0.5 41.8919,0.5 C59.673,0.5 74.0856,14.8849 74.0856,32.6314 C74.0856,50.3777 59.6730,64.7626 41.8919,64.7626 C34.1735,64.7626 27.0933,62.04629 21.5485,57.5267 L29.7541,49.3368 C33.1652,51.8097 37.3510,53.2869 41.8919,53.2869 C53.3223,53.2869 62.5879,44.0394 62.5879,32.6312 C62.5879,21.2230 53.3223,11.9751 41.8919,11.9751 C31.2398,11.9751 22.4758,20.0091 21.3308,30.3359 L30.39422,30.3359 L15.5190,46.4016 Z"></path></svg>
+		</div>
+	</div>
+</div> 
+</div>
+
+
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="./Intro100/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div>
+<script src="js/xplainAni.js" type="text/javascript"></script>
+<script src="js/xplainCss.js" type="text/javascript"></script>
+<script src="js/xplainTime.js" type="text/javascript"></script>
+<script src="js/xplainEase.js" type="text/javascript"></script>
+<script src="js/xplainType.js" type="text/javascript"></script>
+<script src="js/xplain.js" type="text/javascript"></script>
+<script>
+xplain = initXplain(true,false,false);
+
+xplain.addEventListener('onmoving', function (index, count) {
+	if (index < count-1) {
+		document.getElementById('xplplayerexit').style.display = 'none';
+	}
+});
+xplain.addEventListener('onmoved', function (index, count) {
+  if (index == count-1) {
+	xplain.stop();
+	var pbtn = document.getElementById('xplplayerplay');
+	if (pbtn) pbtn.style.display = 'none';
+	var replay = document.getElementById('xplplayerexit');
+	if ((replay) && (replay.style.display != 'block')) {
+		var t = new TimelineLite();
+		t.fromTo(replay, 1, {opacity: 0.5}, {opacity: 1, display: 'block'}, xplain.slideDuration('last'));
+	}
+  }
+});
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="./Intro100/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div></noscript>
+</body>
+</html>

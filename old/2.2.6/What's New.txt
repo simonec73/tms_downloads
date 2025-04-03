@@ -1,0 +1,12 @@
+Improvements and fixes for version 2.2.6
+----------------------------------------
+
+- [Bug] Updated System.IO.Packaging to address a vulnerability.
+- [Improved] Updated all references to the latest versions.
+- [Bug] Import Knowledge Bases fail with an error and cleanup of the Undo/Redo fails because some objects are not covered by Undo Redo.
+- [Bug] In some situations opening a file crashes the application.
+- [Bug] In some situations, threat type creation causes a crash.
+- [Bug] Sudden crash when creating a new document.
+- [Bug] Properties extracted to KBs are saved with different IDs. Therefore, Merge does not work.
+- [Bug] Merge does not compare correctly Properties and marks them as different.
+- [Improvement] The diagram is re-positioned near the original position after an Undo or Redo.

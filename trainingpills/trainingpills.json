@@ -1,0 +1,259 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Introductive",
+            "prefix" : "Intro",
+            "topics" :
+            [
+                {
+                    "name" : "Installation and Configuration",
+                    "lessons" : 
+                    [
+                        {
+                            "id" : 1,
+                            "name" : "Initial Configuration",
+                            "description" : "How to configure Threats Manager Studio for the first time.",
+                            "tags" :
+                            [
+                                "Configuration",
+                                "Threats Manager Studio",
+                                "Smart Save",
+                                "Extensions",
+                                "Spell Check"
+                            ]
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Basic concepts",
+                    "lessons" : 
+                    [
+                        {
+                            "id" : 100,
+                            "name" : "Threat Model",
+                            "description" : "What is a Threat Model and why it is so important.",
+                            "tags" :
+                            [
+                                "Threat Model"
+                            ]
+                        },
+                        {
+                            "id" : 101,
+                            "name" : "Entities",
+                            "description" : "This lesson describe the various entities, what they are and how to use them.",
+                            "tags" :
+                            [
+                                "External Interactor",
+                                "Process",
+                                "Data Store"
+                            ]
+                        },
+                        {
+                            "id" : 102,
+                            "name" : "Data Flows",
+                            "description" : "Introduction to the Data Flows: what they are and how they work in the Platform.",
+                            "tags" :
+                            [
+                                "Data Flow",
+                            ]
+                        },
+                        {
+                            "id" : 103,
+                            "name" : "Trust Boundaries",
+                            "description" : "This lesson introduces the Trust Boundaries in the Platform.",
+                            "tags" :
+                            [
+                                "Trust Boundary",
+                            ]
+                        },
+                        {
+                            "id" : 104,
+                            "name" : "Threats",
+                            "description" : "Introduction to Threats, Threat Types and Threat Events.",
+                            "tags" :
+                            [
+                                "Threat",
+                                "Threat Type",
+                                "Threat Event"
+                            ]
+                        },
+                        {
+                            "id" : 105,
+                            "name" : "Mitigations",
+                            "description" : "Introduction to Mitigations, Standard Mitigation and Assigned Mitigations.",
+                            "tags" :
+                            [
+                                "Mitigation",
+                                "Standard Mitigation",
+                                "Assigned Mitigation"
+                            ]
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Diagramming",
+                    "lessons" : 
+                    [
+                        {
+                            "id" : 200,
+                            "name" : "Diagramming basics",
+                            "description" : "How to create a Diagram and the different types of entities.",
+                            "tags" :
+                            [
+                                "Diagram",
+                                "External Interactor",
+                                "Process",
+                                "Data Store",
+                                "Data Flow",
+                                "Basic Objects palette",
+                                "Palettes",
+                                "Remove a Diagram"
+                            ]
+                        },
+                        {
+                            "id" : 201,
+                            "name" : "The Existing Object palette",
+                            "description" : "How to reuse objects between Diagrams using the Existing Objects palette.",
+                            "tags" :
+                            [
+                                "Diagram",
+                                "Existing Objects",
+                                "Existing Objects palette"
+                            ]
+                        },
+                        {
+                            "id" : 205,
+                            "name" : "Zoom and Snapshots",
+                            "description" : "How to zoom the Diagram and to take a snapshot of it.",
+                            "tags" :
+                            [
+                                "Diagram",
+                                "Zoom",
+                                "Snapshots"
+                            ]
+                        },
+                        {
+                            "id" : 210,
+                            "name" : "Icons customization",
+                            "description" : "How to change the icon for the Entities.",
+                            "tags" :
+                            [
+                                "Diagram",
+                                "Icons",
+                                "Icon sizes",
+                                "Icon formats",
+                                "External Interactor",
+                                "Process",
+                                "Data Store"
+                            ]
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Tables",
+                    "lessons" : 
+                    [
+                        {
+                            "id" : 300,
+                            "name" : "External Interactor List",
+                            "description" : "The External Interactor List.",
+                            "tags" :
+                            [
+                                "Tables",
+                                "External Interactor",
+                                "Add External Interactor",
+                                "Remove External Interactor",
+                                "Find an External Interactor in Diagrams",
+                                "Refresh",
+                                "Filtering"
+                            ]
+                        },
+                        {
+                            "id" : 301,
+                            "name" : "Process List",
+                            "description" : "The Process List.",
+                            "tags" :
+                            [
+                                "Tables",
+                                "Process",
+                                "Add Process",
+                                "Remove Process",
+                                "Find a Process in Diagrams",
+                                "Refresh",
+                                "Filtering"
+                            ]
+                        },
+                        {
+                            "id" : 302,
+                            "name" : "Data Store List",
+                            "description" : "The Data Store List.",
+                            "tags" :
+                            [
+                                "Tables",
+                                "Data Store",
+                                "Add Data Store",
+                                "Remove Data Store",
+                                "Find a Data Store in Diagrams",
+                                "Refresh",
+                                "Filtering"
+                            ]
+                        },
+                        {
+                            "id" : 303,
+                            "name" : "Data Flow List",
+                            "description" : "The Data Flow List.",
+                            "tags" :
+                            [
+                                "Tables",
+                                "Data Flow",
+                                "Remove Data Flow",
+                                "Find a Data Flow in Diagrams",
+                                "Refresh",
+                                "Filtering"
+                            ]
+                        },
+                        {
+                            "id" : 304,
+                            "name" : "Trust Boundary List",
+                            "description" : "The Trust Boundary List.",
+                            "tags" :
+                            [
+                                "Tables",
+                                "Trust Boundary",
+                                "Add Trust Boundary",
+                                "Remove Trust Boundary",
+                                "Find a Trust Boundary in Diagrams",
+                                "Refresh",
+                                "Filtering"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "Advanced",
+            "prefix" : "Adv",
+            "topics" :
+            [
+                {
+                    "name" : "The View Ribbon",
+                    "lessons" : 
+                    [
+                        {
+                            "id" : 1000,
+                            "name" : "Entity Templates",
+                            "description" : "What are the Entity Templates, how to create and use them.",
+                            "tags" :
+                            [
+                                "Entity Template",
+                                "Diagram"
+                            ]
+                        }
+                    ]            
+                }
+            ]
+        }
+    ]
+}

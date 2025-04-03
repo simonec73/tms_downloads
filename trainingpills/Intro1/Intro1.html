@@ -1,0 +1,467 @@
+<!doctype html>
+<!-- saved from url=(0027)http://www.helpxplain.com/ -->
+<!--
+
+Hey!
+Glad you take a look into the source, Dude... :-)
+
+                 This slideshow was made with
+.__           .__           ____  ___      .__         .__
+|  |__   ____ |  | ______   \   \/  /_____ |  | _____  |__| ____
+|  |  \_/ __ \|  | \____ \   \     /\____ \|  | \__  \ |  |/    \
+|   Y  \  ___/|  |_|  |_> >  /     \|  |_> >  |__/ __ \|  |   |  \
+|___|  /\___  >____/   __/  /___/\  \   __/|____(____  /__|___|  /
+     \/     \/     |__|           \_/__|             \/        \/
+
+HelpXplain is the cutting-edge graphics software, that
+creates interactive HTML5 and Javascript slideshows
+for the Web. No Flash here, believe us! Just standards-
+compliant HTML5 & CSS & Javascript. 100% responsive and
+100% cross-platform.
+
+Visit our website, download the trial and give it a run!
+You'll love it, promise.
+
+http://www.helpxplain.com
+
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Threats Manager Platform - Intro1 - Initial Configuration</title>
+<meta name="description" content="Initial Configuration procedures for Threats Manager Platform." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:title" content="Threats Manager Platform - Intro1 - Initial Configuration" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Initial Configuration procedures for Threats Manager Platform." />
+<meta property="og:site_name" content="Simone Curzi" />
+<meta property="og:image" content="./Intro1/preview.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta property="og:image:alt" content="Threats Manager Platform - Intro1 - Initial Configuration" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Threats Manager Platform - Intro1 - Initial Configuration" />
+<meta property="twitter:description" content="Initial Configuration procedures for Threats Manager Platform." />
+<meta property="twitter:creator" content="Simone Curzi" />
+<meta property="twitter:site" content="Simone Curzi" />
+<meta property="twitter:image" content="./Intro1/preview.jpg" />
+
+<link rel="icon" href="./Intro1/favicon.png" type="image/png">
+<style TYPE="text/css" media="screen">
+body {
+  font-family: Arial,sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+a { color: #0070C0 }
+
+p {
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3 {
+  line-height: 1.2em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+ul {
+  margin: 0 0 0 0.9em;
+  padding: 0;
+}
+ol {
+  margin: 0 0 0 1.2em;
+  padding: 0;
+}
+li {
+  line-height: 1.2em;
+}
+
+
+
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+
+div#xplplayercontrols {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1vH;
+	margin: 0;
+	opacity: 1;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerprogress {
+	display: block;
+}
+div#xplplayerprogress div {
+	position:absolute;
+	top: 0;
+	height: 1vH;
+	width: 0%;
+	background: #1072C5;
+}
+div#xplplayercontrols .button {
+	transition: transform 0.3s;
+}
+div#xplplayercontrols .button:hover {
+  transform: scale(1.1,1.1);
+}
+div#xplplayercontrols .button.disabled {
+	display: none;
+}
+div#xplplayercontrols svg {
+	display: inline-block;
+	width: 100%;
+}
+div#xplplayercontrols .xplplaybutton {
+  fill: #D80000;
+  stroke: none;
+}
+div#xplplayerplay {
+	margin: -60vH auto;
+	width: 20vH;
+	height: 20vH;
+	cursor: pointer;
+}
+div#xplplayerexit {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;  
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 7vH;
+}
+div#xplplayerexit .exitbutton {
+	margin:0;
+	padding: 0px;
+	opacity: 0.6;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerexit .exitbutton:hover {
+	opacity: 1;
+}
+div#xplplayerexit .replay {
+	cursor: pointer;
+}
+div#xplplayerexit p {
+	margin: 0 0 0.5em 0;
+}
+div#xplplayerexit div.replay svg {
+	width: 2em;
+	height: 2em;
+}
+a.sharebutton {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+}
+div#xplplayerloading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 32vH;
+  height: 32vH;
+  margin: -16vH 0 0 -16vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: #1072C5;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+</style>
+</head>
+<body style="background-color:#FFFFFF;position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden">
+<div id="xplbase" style="display:none;position:absolute;top:50%;left:50%;transform-origin:left top">
+<div id="xplcanvas" style="position:absolute">
+<div class="xplitem frame xplframe" id="slide2" data-scale="1" data-rotate="0" data-frameindex="0" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-8606.0098" data-framer="0" data-frametrans="1" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-8947.5098px;width:1024px;height:683px">
+<div class="xplitem image" id="image2" data-scale="1" data-rotate="0" style="position:absolute;left:0.0001px;top:-0.0006px;width:959.082px;height:683.463px"><img src="./Intro1/18.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem shape" id="rectangle1" data-scale="1" data-rotate="17.9256" style="position:absolute;left:638.878px;top:-42.6243px;width:329.535px;height:801.207px;transform: rotate(17.9256deg)"><svg style="position:absolute;overflow:visible" width="330" height="801" viewBox="0 0 330 801"><rect class="xplsvgpath" fill="#0173C7" fill-rule="evenodd" stroke="none" x="0" y="0" width="330" height="801"></rect></svg>
+</div>
+<div class="xplitem text" id="text1" data-scale="0.2" data-rotate="0" style="position:absolute;left:20.876px;top:477.103px;width:433.733px;height:44px;transform: scale(0.2,0.2)"><div style="width:433.733px;height:44px;transform:scale(5)"><p>Threats Manager Platform</p></div>
+</div>
+<div class="xplitem text" id="text2" data-scale="0.2" data-rotate="-8.8928" data-framein="0,fadein,0,0,0.5,0,,false" style="position:absolute;left:452.535px;top:502.592px;width:128.572px;height:60px;transform: scale(0.2,0.2) rotate(-8.8928deg)"><div style="width:128.572px;height:60px;transform:scale(5)"><p style="font-family:'Segoe Script';font-size:43px;color:#0173C7;">Pills</p></div>
+</div>
+<div class="xplitem text" id="text3" data-scale="0.2" data-rotate="0" data-framein="0,typetext,0,0,3,0.5,,false" style="position:absolute;left:22.0378px;top:521.171px;width:367.627px;height:39px;transform: scale(0.2,0.2)"><div style="width:367.627px;height:39px;transform:scale(5)"><p style="font-size:32px;">Initial Configuration</p></div>
+</div>
+<div class="xplitem image" id="background" data-scale="1" data-rotate="12.9205" style="position:absolute;left:673.714px;top:-37.0504px;width:487.147px;height:805.159px;transform: rotate(12.9205deg)"><img src="./Intro1/Background-clip007181187.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text29" data-scale="0.2" data-rotate="0" style="position:absolute;left:21.9663px;top:629.275px;width:571.559px;height:26px;transform: scale(0.2,0.2)"><div style="width:571.559px;height:26px;transform:scale(5)"><p style="font-size:21px;">You can use your keyboard to move between slides.&nbsp;</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide3" data-scale="1" data-rotate="0" data-frameindex="1" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-7786.3901" data-framer="0" data-frametrans="1" data-frameshow="4" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-8127.8901px;width:1024px;height:683px">
+<div class="xplitem image" id="image3" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:-0.0001px;width:1030px;height:727.564px"><img src="./Intro1/0.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text4" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,5,0,,false" style="position:absolute;left:15.2433px;top:46.1332px;width:716.369px;height:66px;transform: scale(0.2,0.2)"><div style="width:716.369px;height:66px;transform:scale(5)"><p style="font-size:27px;">When you start Threats Manager Platform,</p><p style="font-size:27px;">the Consent Required dialog is shown...</p></div>
+</div>
+<div class="xplitem text" id="text5" data-scale="0.2" data-rotate="0" data-framein="1,typetext,0,0,4,5,,false" style="position:absolute;left:760.378px;top:176.555px;width:252.212px;height:132px;transform: scale(0.2,0.2)"><div style="width:252.212px;height:132px;transform:scale(5)"><p style="font-size:27px;">... please read it carefully and if you agree click on the Yes button.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor3" data-scale="1" data-rotate="0" data-frameout="1,movefrom,512,341.5,1,0,,false" style="position:absolute;left:574.295px;top:627.039px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="1,flash,0,0,0.3,1,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide4" data-scale="1" data-rotate="0" data-frameindex="2" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-6966.77" data-framer="0" data-frametrans="1" data-frameshow="13" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-7308.27px;width:1024px;height:683px">
+<div class="xplitem image" id="image4" data-scale="1" data-rotate="0" style="position:absolute;left:-0.0001px;top:-0.0028px;width:1030px;height:738.492px"><img src="./Intro1/1.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text6" data-scale="0.2" data-rotate="0" data-framein="2,typetext,0,0,3,0.5,,false" style="position:absolute;left:151.423px;top:273.412px;width:661.697px;height:88px;transform: scale(0.2,0.2)"><div style="width:661.697px;height:88px;transform:scale(5)"><p>This opens the tool, which is called Threats Manager Studio.</p></div>
+</div>
+<div class="xplitem text" id="text7" data-scale="0.2" data-rotate="0" data-framein="2,typetext,0,0,3,4,,false" style="position:absolute;left:149.915px;top:386.982px;width:661.697px;height:88px;transform: scale(0.2,0.2)"><div style="width:661.697px;height:88px;transform:scale(5)"><p>Before using it, we need to configure some parameters.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide5" data-scale="1" data-rotate="0" data-frameindex="3" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-6147.1499" data-framer="0" data-frametrans="0" data-frameshow="5" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-6488.6499px;width:1024px;height:683px">
+<div class="xplitem image" id="image5" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:-0.0033px;width:1030px;height:734.295px"><img src="./Intro1/1.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem cursor" id="cursor2" data-scale="1" data-rotate="0" data-frameout="3,movefrom,574.2951,627.0392,1,1,,false" style="position:absolute;left:26.7127px;top:34.3837px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="3,flash,0,0,0.3,2,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text8" data-scale="0.2" data-rotate="0" data-framein="3,typetext,0,0,2,0.5,,false" style="position:absolute;left:314.436px;top:148.728px;width:300px;height:33px;transform: scale(0.2,0.2)"><div style="width:300px;height:33px;transform:scale(5)"><p style="font-size:27px;">Click on the menu File.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide6" data-scale="1" data-rotate="0" data-frameindex="4" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-5327.5298" data-framer="0" data-frametrans="0" data-frameshow="5" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-5669.0298px;width:1024px;height:683px">
+<div class="xplitem image" id="image6" data-scale="1" data-rotate="0" style="position:absolute;left:-0.0009px;top:-0.0002px;width:1030px;height:729.787px"><img src="./Intro1/5.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text9" data-scale="0.2" data-rotate="0" data-framein="4,typetext,0,0,2,0.5,,false" style="position:absolute;left:314.436px;top:148.728px;width:300px;height:33px;transform: scale(0.2,0.2)"><div style="width:300px;height:33px;transform:scale(5)"><p style="font-size:27px;">And then click Options.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor4" data-scale="1" data-rotate="0" data-frameout="4,movefrom,26.7127,34.3841,1,1,,false" style="position:absolute;left:253.022px;top:346.039px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="4,flash,0,0,0.3,2,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide7" data-scale="1" data-rotate="0" data-frameindex="5" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-4507.9102" data-framer="0" data-frametrans="1" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-4849.4102px;width:1024px;height:683px">
+<div class="xplitem image" id="image7" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text10" data-scale="0.2" data-rotate="0" data-framein="5,typetext,0,0,3,0.5,,false" style="position:absolute;left:324.98px;top:174.568px;width:360.576px;height:33px;transform: scale(0.2,0.2)"><div style="width:360.576px;height:33px;transform:scale(5)"><p style="font-size:27px;">Options contains three pages.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide10" data-scale="1" data-rotate="0" data-frameindex="6" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-3688.2898" data-framer="0" data-frametrans="0" data-frameshow="7" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-4029.7898px;width:1024px;height:683px">
+<div class="xplitem image" id="image10" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text11" data-scale="0.2" data-rotate="0" data-framein="6,typetext,0,0,5,0.5,,false" style="position:absolute;left:331.693px;top:163.061px;width:360.576px;height:99px;transform: scale(0.2,0.2)"><div style="width:360.576px;height:99px;transform:scale(5)"><p style="font-size:27px;">The Extensions page allows specifying the folder where the Extensions are installed.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide11" data-scale="1" data-rotate="0" data-frameindex="7" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-2868.6699" data-framer="0" data-frametrans="0" data-frameshow="10" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-3210.1699px;width:1024px;height:683px">
+<div class="xplitem image" id="image11" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text12" data-scale="0.2" data-rotate="0" data-framein="7,typetext,0,0,4,0.5,,false" style="position:absolute;left:331.692px;top:163.06px;width:420.053px;height:66px;transform: scale(0.2,0.2)"><div style="width:420.053px;height:66px;transform:scale(5)"><p style="font-size:27px;">Normally, you would click Add Default to add the standard path.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor5" data-scale="1" data-rotate="0" data-framein="7,movefrom,253.022,346.0391,0.5,5,,false" style="position:absolute;left:898.416px;top:213.709px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="7,flash,0,0,0.3,5.5,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text13" data-scale="0.2" data-rotate="0" data-framein="7,typetext,0,0,2.5,6.3,,false" style="position:absolute;left:304.285px;top:241.146px;width:578.84px;height:33px;transform: scale(0.2,0.2)"><div style="width:578.84px;height:33px;transform:scale(5)"><p style="font-size:27px;">You can also specify another path, if you want.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide13" data-scale="1" data-rotate="0" data-frameindex="8" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-2049.0598" data-framer="0" data-frametrans="0" data-frameshow="12" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-2390.5598px;width:1024px;height:683px">
+<div class="xplitem image" id="image13" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text16" data-scale="0.2" data-rotate="0" data-framein="8,typetext,0,0,5,0.5,,false" style="position:absolute;left:455.407px;top:247.449px;width:463.185px;height:66px;transform: scale(0.2,0.2)"><div style="width:463.185px;height:66px;transform:scale(5)"><p style="font-size:27px;">Then you can specify the prefix for the Assemblies containing Extensions.</p></div>
+</div>
+<div class="xplitem text" id="text17" data-scale="0.2" data-rotate="0" data-framein="8,typetext,0,0,5,6,,false" style="position:absolute;left:265.952px;top:315.947px;width:463.185px;height:66px;transform: scale(0.2,0.2)"><div style="width:463.185px;height:66px;transform:scale(5)"><p style="font-size:27px;">This is only for performance purposes, but is highly recommended.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide14" data-scale="1" data-rotate="0" data-frameindex="9" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-1229.4397" data-framer="0" data-frametrans="0" data-frameshow="10" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-1570.9397px;width:1024px;height:683px">
+<div class="xplitem image" id="image14" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text18" data-scale="0.2" data-rotate="0" data-framein="9,typetext,0,0,4,0.5,,false" style="position:absolute;left:455.407px;top:247.449px;width:463.185px;height:66px;transform: scale(0.2,0.2)"><div style="width:463.185px;height:66px;transform:scale(5)"><p style="font-size:27px;">To do that, you need first to enable the related checkbox...</p></div>
+</div>
+<div class="xplitem cursor" id="cursor7" data-scale="1" data-rotate="0" data-framein="9,movefrom,898.4161,213.7094,1,5,,false" style="position:absolute;left:216.585px;top:285.63px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="9,flash,0,0,0.3,6,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide15" data-scale="1" data-rotate="0" data-frameindex="10" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="-409.8182" data-framer="0" data-frametrans="0" data-frameshow="10" data-frameposition="fit" style="position:absolute;left:-512.012px;top:-751.3182px;width:1024px;height:683px">
+<div class="xplitem image" id="image15" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text21" data-scale="0.2" data-rotate="0" data-framein="10,typetext,0,0,5,0.5,,false" style="position:absolute;left:265.95px;top:315.946px;width:518.401px;height:66px;transform: scale(0.2,0.2)"><div style="width:518.401px;height:66px;transform:scale(5)"><p style="font-size:27px;">... and then to specify the prefix. Normally you should use Add Default.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor10" data-scale="1" data-rotate="0" data-frameout="10,movefrom,216.585,285.6304,1,0,,false" style="position:absolute;left:891.7px;top:352.754px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="10,flash,0,0,0.3,1,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide16" data-scale="1" data-rotate="0" data-frameindex="11" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="409.8014" data-framer="0" data-frametrans="0" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.012px;top:68.3014px;width:1024px;height:683px">
+<div class="xplitem image" id="image16" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text22" data-scale="0.2" data-rotate="0" data-framein="11,typetext,0,0,4,0.5,,false" style="position:absolute;left:262.114px;top:426.224px;width:518.401px;height:66px;transform: scale(0.2,0.2)"><div style="width:518.401px;height:66px;transform:scale(5)"><p style="font-size:27px;">The last step for this page is to enforce certificate checking.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide17" data-scale="1" data-rotate="0" data-frameindex="12" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="1229.4199" data-framer="0" data-frametrans="0" data-frameshow="9" data-frameposition="fit" style="position:absolute;left:-512.012px;top:887.9199px;width:1024px;height:683px">
+<div class="xplitem image" id="image17" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text23" data-scale="0.2" data-rotate="0" data-framein="12,typetext,0,0,5,0.5,,false" style="position:absolute;left:262.114px;top:426.223px;width:518.401px;height:99px;transform: scale(0.2,0.2)"><div style="width:518.401px;height:99px;transform:scale(5)"><p style="font-size:27px;">This is highly recommended for security purposes, to avoid loading untrusted Extensions.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide18" data-scale="1" data-rotate="0" data-frameindex="13" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="2049.0405" data-framer="0" data-frametrans="0" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.012px;top:1707.5405px;width:1024px;height:683px">
+<div class="xplitem image" id="image18" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text24" data-scale="0.2" data-rotate="0" data-framein="13,typetext,0,0,3,0.5,,false" style="position:absolute;left:262.114px;top:426.222px;width:518.401px;height:33px;transform: scale(0.2,0.2)"><div style="width:518.401px;height:33px;transform:scale(5)"><p style="font-size:27px;">To do that, first enable the checkbox.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor8" data-scale="1" data-rotate="0" data-framein="13,movefrom,891.7001,352.7546,1,4,,false" style="position:absolute;left:216.589px;top:404.551px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="13,flash,0,0,0.3,5,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide19" data-scale="1" data-rotate="0" data-frameindex="14" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="2868.6602" data-framer="0" data-frametrans="0" data-frameshow="8" data-frameposition="fit" style="position:absolute;left:-512.012px;top:2527.1602px;width:1024px;height:683px">
+<div class="xplitem image" id="image19" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text25" data-scale="0.2" data-rotate="0" data-framein="14,typetext,0,0,2,0.5,,false" style="position:absolute;left:262.114px;top:426.222px;width:518.401px;height:33px;transform: scale(0.2,0.2)"><div style="width:518.401px;height:33px;transform:scale(5)"><p style="font-size:27px;">And then click Add Default.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor9" data-scale="1" data-rotate="0" data-framein="14,movefrom,216.589,404.5511,1,3,,false" style="position:absolute;left:889.764px;top:467.845px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="14,flash,0,0,0.3,4,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide20" data-scale="1" data-rotate="0" data-frameindex="15" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="3688.2805" data-framer="0" data-frametrans="0" data-frameshow="6" data-frameposition="fit" style="position:absolute;left:-512.012px;top:3346.7805px;width:1024px;height:683px">
+<div class="xplitem image" id="image20" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/6.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text26" data-scale="0.2" data-rotate="0" data-framein="15,typetext,0,0,3,0.5,,false" style="position:absolute;left:262.114px;top:426.222px;width:550.99px;height:33px;transform: scale(0.2,0.2)"><div style="width:550.99px;height:33px;transform:scale(5)"><p style="font-size:27px;">Now we can switch to the Smart Save page.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor11" data-scale="1" data-rotate="0" data-framein="15,movefrom,889.764,467.8454,1,4,,false" style="position:absolute;left:178.217px;top:230.015px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="15,flash,0,0,0.3,5,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide8" data-scale="1" data-rotate="0" data-frameindex="16" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="4507.9004" data-framer="0" data-frametrans="0" data-frameshow="10" data-frameposition="fit" style="position:absolute;left:-512.012px;top:4166.4004px;width:1024px;height:683px">
+<div class="xplitem image" id="image8" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/7-clip0020481528.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text14" data-scale="0.2" data-rotate="0" data-framein="16,typetext,0,0,6,0.5,,false" style="position:absolute;left:235.835px;top:381.771px;width:648.225px;height:99px;transform: scale(0.2,0.2)"><div style="width:648.225px;height:99px;transform:scale(5)"><p style="font-size:27px;">Smart Save is a powerful feature to avoid losing your work. It saves the Threat Model automatically, maintaining a number of old versions.</p></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide12" data-scale="1" data-rotate="0" data-frameindex="17" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="5327.5205" data-framer="0" data-frametrans="0" data-frameshow="7" data-frameposition="fit" style="position:absolute;left:-512.012px;top:4986.0205px;width:1024px;height:683px">
+<div class="xplitem image" id="image12" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/7-clip0020481528.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text15" data-scale="0.2" data-rotate="0" data-framein="17,typetext,0,0,3,0.5,,false" style="position:absolute;left:235.835px;top:381.769px;width:648.225px;height:33px;transform: scale(0.2,0.2)"><div style="width:648.225px;height:33px;transform:scale(5)"><p style="font-size:27px;">To configure it, please enable Smart Save first.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor6" data-scale="1" data-rotate="0" data-framein="17,movefrom,178.217,230.0147,1,4,,false" style="position:absolute;left:219.467px;top:173.434px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="17,flash,0,0,0.3,5,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide21" data-scale="1" data-rotate="0" data-frameindex="18" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="6147.1299" data-framer="0" data-frametrans="0" data-frameshow="12" data-frameposition="fit" style="position:absolute;left:-512.012px;top:5805.6299px;width:1024px;height:683px">
+<div class="xplitem image" id="image21" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/7-clip0020481528.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text19" data-scale="0.2" data-rotate="0" data-framein="18,typetext,0,0,6,0.5,,false" style="position:absolute;left:235.835px;top:381.769px;width:648.225px;height:99px;transform: scale(0.2,0.2)"><div style="width:648.225px;height:99px;transform:scale(5)"><p style="font-size:27px;">Then you have to configure the number of saves to maintain (1) and how frequently you want the tool to automatically save your models (2).</p></div>
+</div>
+<div class="xplitem shape" id="shape1" data-scale="1" data-rotate="0" data-framein="18,fadein,0,0,0.5,3,,false" style="position:absolute;left:377.689px;top:168.638px;width:30.7365px;height:30.7364px"><svg style="position:absolute;overflow:visible" width="31" height="31" viewBox="0 0 31 31"><ellipse class="xplsvgpath" fill="#D50000" fill-rule="evenodd" stroke-width="1" stroke="#000000" cx="15.5" cy="15.5" rx="15" ry="15"></ellipse></svg><div style="position:absolute;left:1px;top:2.3682px;width:28.7365px;height:26px;transform:scale(1)"><div style="width:28.7365px;height:26px;transform:scale(1)"><p style="text-align:center;font-size:21px;color:#FFFFFF;">1</p></div></div>
+</div>
+<div class="xplitem shape" id="shape2" data-scale="1" data-rotate="0" data-framein="18,fadein,0,0,0.5,6,,false" style="position:absolute;left:746.346px;top:166.174px;width:31.2859px;height:31.2859px"><svg style="position:absolute;overflow:visible" width="31" height="31" viewBox="0 0 31 31"><ellipse class="xplsvgpath" fill="#D50000" fill-rule="evenodd" stroke-width="1" stroke="#000000" cx="15.5" cy="15.5" rx="15" ry="15"></ellipse></svg><div style="position:absolute;left:1px;top:2.643px;width:29.2859px;height:26px;transform:scale(1)"><div style="width:29.2859px;height:26px;transform:scale(1)"><p style="text-align:center;font-size:21px;color:#FFFFFF;">2</p></div></div>
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide22" data-scale="1" data-rotate="0" data-frameindex="19" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="6966.7505" data-framer="0" data-frametrans="0" data-frameshow="5" data-frameposition="fit" style="position:absolute;left:-512.012px;top:6625.2505px;width:1024px;height:683px">
+<div class="xplitem image" id="image22" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/7-clip0020481528.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text20" data-scale="0.2" data-rotate="0" data-framein="19,typetext,0,0,2,0.5,,false" style="position:absolute;left:235.835px;top:381.767px;width:648.225px;height:33px;transform: scale(0.2,0.2)"><div style="width:648.225px;height:33px;transform:scale(5)"><p style="font-size:27px;">Now we can move to the Other Settings</p></div>
+</div>
+<div class="xplitem cursor" id="cursor12" data-scale="1" data-rotate="0" data-framein="19,movefrom,219.467,173.4343,1,3,,false" style="position:absolute;left:167.69px;top:276.045px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-framein="19,flash,0,0,0.3,4,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide9" data-scale="1" data-rotate="0" data-frameindex="20" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="7786.3701" data-framer="0" data-frametrans="0" data-frameshow="13" data-frameposition="fit" style="position:absolute;left:-512.012px;top:7444.8701px;width:1024px;height:683px">
+<div class="xplitem image" id="image9" data-scale="1" data-rotate="0" style="position:absolute;left:0px;top:0px;width:1030px;height:768.476px"><img src="./Intro1/8-clip0020481528.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text27" data-scale="0.2" data-rotate="0" data-framein="20,typetext,0,0,4,0.5,,false" style="position:absolute;left:235.8px;top:197.646px;width:665.565px;height:66px;transform: scale(0.2,0.2)"><div style="width:665.565px;height:66px;transform:scale(5)"><p style="font-size:27px;">Here you can set the User Dictionary.</p><p style="font-size:27px;">Normally you would not need to configure it.</p></div>
+</div>
+<div class="xplitem text" id="text28" data-scale="0.2" data-rotate="0" data-framein="20,typetext,0,0,6,5,,false" style="position:absolute;left:233.883px;top:276.286px;width:623.367px;height:132px;transform: scale(0.2,0.2)"><div style="width:623.367px;height:132px;transform:scale(5)"><p style="font-size:27px;">When done, please click Ok and the close the Threats Manager Studio.</p><p style="font-size:27px;">The next time you'll open it again, you'll see your additional Extensions.</p></div>
+</div>
+<div class="xplitem cursor" id="cursor13" data-scale="1" data-rotate="0" data-frameout="20,movefrom,167.69,276.0441,1,0.5,,false" style="position:absolute;left:840.926px;top:606.924px;width:69px;height:67px"><svg class="xplitem xplcursorflash" data-scale="1" data-frameout="20,flash,0,0,0.3,1.5,,false" ViewBox="0 0 100 100" style="position:absolute;visibility:hidden;left:-34.5px;top:-34.5px;width:69px;height:69px"><g style="fill:none;stroke:#ff0000;stroke-width:8px"><circle cx="50" cy="50" r="45" style="stroke-opacity:0.5"></circle><circle cx="50" cy="50" r="25" style="stroke-opacity:0.7"></circle><circle cx="50" cy="50" r="4" style="stroke-opacity:0.9"></circle></g></svg><img src="./Intro1/cursor.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+</div>
+<div class="xplitem frame xplframe" id="slide24" data-scale="1" data-rotate="0" data-frameindex="21" data-framew="1024" data-frameh="683" data-framecx="-0.012" data-framecy="8605.9912" data-framer="0" data-frametrans="1" data-frameshow="0" data-frameposition="fit" style="position:absolute;left:-512.012px;top:8264.4912px;width:1024px;height:683px">
+<div class="xplitem image" id="image24" data-scale="1" data-rotate="0" style="position:absolute;left:0.0001px;top:-0.0006px;width:959.082px;height:683.463px"><img src="./Intro1/1-clip0020601468.png" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem shape" id="rectangle3" data-scale="1" data-rotate="17.9256" style="position:absolute;left:638.878px;top:-42.6243px;width:329.535px;height:801.207px;transform: rotate(17.9256deg)"><svg style="position:absolute;overflow:visible" width="330" height="801" viewBox="0 0 330 801"><rect class="xplsvgpath" fill="#0173C7" fill-rule="evenodd" stroke="none" x="0" y="0" width="330" height="801"></rect></svg>
+</div>
+<div class="xplitem image" id="background2" data-scale="1" data-rotate="12.9205" style="position:absolute;left:673.691px;top:-36.8971px;width:488.54px;height:805.196px;transform: rotate(12.9205deg)"><img src="./Intro1/Background2-clip007201187.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%" />
+</div>
+<div class="xplitem text" id="text33" data-scale="0.2" data-rotate="0" style="position:absolute;left:21.8459px;top:292.97px;width:515.079px;height:58px;transform: scale(0.2,0.2)"><div style="width:515.079px;height:58px;transform:scale(5)"><p style="font-size:48px;">Thank you for watching!</p></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="xplplayercontrols" data-overlay="1">
+<div id="xplplayerprogress"><div id="xplplayerprogressindicator"></div></div>
+<div id="xplplayerplay" class="button" onclick="xplain.play()" title="Play Slideshow">
+	<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#FFFFFF"></circle><circle class="xplplaybutton" cx="50" cy="50" r="46"></circle><path d="M40,72.5L70,50L40,27.45V72.5z" fill="#FFFFFF"></path></svg>
+</div>
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<div id="xplplayerexit">
+	<div style="margin:0;position:absolute;width:100%;top:50%;-ms-transform: translateY(-50%);transform: translateY(-50%)">
+		<div class="exitbutton replay" onclick="xplain.reload()">
+			<p>Reload</p>
+			<svg viewbox="0 0 100 100">
+				<path fill="#FFFFFF" d="M15.5190,46.4016 L0.5,30.33618 L9.7889,30.3361 C10.9691,13.6623 24.8848,0.5 41.8919,0.5 C59.673,0.5 74.0856,14.8849 74.0856,32.6314 C74.0856,50.3777 59.6730,64.7626 41.8919,64.7626 C34.1735,64.7626 27.0933,62.04629 21.5485,57.5267 L29.7541,49.3368 C33.1652,51.8097 37.3510,53.2869 41.8919,53.2869 C53.3223,53.2869 62.5879,44.0394 62.5879,32.6312 C62.5879,21.2230 53.3223,11.9751 41.8919,11.9751 C31.2398,11.9751 22.4758,20.0091 21.3308,30.3359 L30.39422,30.3359 L15.5190,46.4016 Z"></path></svg>
+		</div>
+	</div>
+</div> 
+</div>
+
+
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="./Intro1/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div>
+<script src="js/xplainAni.js" type="text/javascript"></script>
+<script src="js/xplainCss.js" type="text/javascript"></script>
+<script src="js/xplainTime.js" type="text/javascript"></script>
+<script src="js/xplainEase.js" type="text/javascript"></script>
+<script src="js/xplainType.js" type="text/javascript"></script>
+<script src="js/xplain.js" type="text/javascript"></script>
+<script>
+xplain = initXplain(true,false,false);
+
+xplain.addEventListener('onmoving', function (index, count) {
+	if (index < count-1) {
+		document.getElementById('xplplayerexit').style.display = 'none';
+	}
+});
+xplain.addEventListener('onmoved', function (index, count) {
+  if (index == count-1) {
+	xplain.stop();
+	var pbtn = document.getElementById('xplplayerplay');
+	if (pbtn) pbtn.style.display = 'none';
+	var replay = document.getElementById('xplplayerexit');
+	if ((replay) && (replay.style.display != 'block')) {
+		var t = new TimelineLite();
+		t.fromTo(replay, 1, {opacity: 0.5}, {opacity: 1, display: 'block'}, xplain.slideDuration('last'));
+	}
+  }
+});
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="./Intro1/preview.jpg" style="width:100%" />
+<div class="fallback">We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on.</div>
+</div></noscript>
+</body>
+</html>
