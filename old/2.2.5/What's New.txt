@@ -1,0 +1,8 @@
+Improvements and fixes for version 2.2.5
+----------------------------------------
+
+- [Bug] The Item Editor does not dedicate enough space to some controls.
+- [Bug] Property Url List is not serialized.
+- [Bug] In some situations it is not possible to retrieve a IMarkerProviderFactory and this causes an exception.
+- [Bug] Addressed some causes of crashes in the Item Editor when a Threat Type is shown.
+- [Bug] Add Missing Flows action crashes if there is a diagram with no entities.

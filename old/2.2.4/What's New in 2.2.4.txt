@@ -1,0 +1,13 @@
+Improvements and fixes for version 2.2.4
+----------------------------------------
+
+- [Bug] The Import Knowledge Base dialog does not support dynamic definition of the supported knowledge base types.
+- [New] Added support for importing multiple knowledge bases at once.
+- [Bug] Resizing the Groups using the top or left handles does not work.
+- [New] Added tabs showing the windows that are currently open.
+- [Bug] Duplicating an entity that has no assigned Item Template crashes TMS.
+- [Bug] The MsTmt extension library is not loaded.
+- [Bug] Mitigation association or disassociation from Threat Type is not reflected in the Item Editor for Threat Type List panel and Auto Threat Type List panel.
+- [Bug] Improved resource usage with Undo/Redo for Annotations panel.
+- [Bug] Pasting a copied auto threat gen rule does not update the Create Rule button in the Auto Gen Rules dialog.
+- [Bug] Sections in the Item Editor are sometimes too short.
