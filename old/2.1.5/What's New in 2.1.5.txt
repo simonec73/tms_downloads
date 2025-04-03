@@ -1,0 +1,15 @@
+Improvements and fixes for version 2.1.5
+----------------------------------------
+
+- [Improved] Trust Boundaries can now be resized starting from the upper left corner.
+- [Bug] Solved regressions with moving and resizing Trust Boundaries.
+- [Bug] Merge function does not merge correctly the properties.
+- [New] Added the possibility to extend the Summary Excel Report with custom pages, using ISummarySheetProvider extensions.
+- [Bug] Fixed various rare crashes identified by telemetry.
+- [Bug] Fixed various issues with Calculated Severity feature from the Quality Extensions library.
+- [Bug] Solved issues with undo/redo related to the removal of Flows.
+- [New] If the Execution Mode is Expert or better, the Item Editor shows who made the last change on imported objects.
+- [New] Fixed crashes in Import Template Dialog due to issues loading the template.
+- [New] Labels for Flows and Entities now have configurable word wrap width.
+- [Improved] Updated all dependencies.
+- [Bug] Fixed a few bugs breaking Undo/Redo.

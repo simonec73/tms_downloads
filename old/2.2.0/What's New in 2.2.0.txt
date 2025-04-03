@@ -1,0 +1,21 @@
+Improvements and fixes for version 2.2.0
+----------------------------------------
+
+- [Bug] Fixed issues causing Windows Handles exhaustion.
+- [Bug] Added User Dictionary for the Spell Checker to a few dialogs that were missing it.
+- [Bug] Fixed various issues with High DPI displays by making TMS High DPI-unaware. This improves Undo and Redo functionality.
+- [New] Added the ability to create relationships between Mitigations (Alternatives and Complementary).
+- [Bug] Undoing the assignment of a Template doesn't have an immediate effect.
+- [Bug] Annotation Property Schema is created when it shouldn't.
+- [Bug] Removal of a Trust Boundary containing Entities is not undone as a single action.
+- [Improved] The Item Editor allows to open the details related to the Template associated to the selected item.
+- [Improved] Topics to be clarified dialogs now have more space for the answers.
+- [New] Added the possibility to set details of the Open Topics missing them.
+- [Bug] Fixed an issue that caused the Execution Mode to be shown incorrectly in the Settings dialog.
+- [Bug] Fixed a bug that caused a crash when a partially initialized object was accessed.
+- [Bug] Fixed a bug causing a crash when the user name is not available.
+- [Bug] Fixed a bug that caused a crash while refreshing the Threat Event List panel.
+- [Bug] Fixed a bug that caused Panels to become unavailable under some conditions.
+- BREAKING CHANGE: Changed IPanel interface to return the eventual reference object for the panel.
+- [Bug] Solved crash due to a Diagram containing a Trust Boundary that has been already removed from the model.
+- [Bug] Fixed crashes of the Annotation dialog under some conditions.
