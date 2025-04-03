@@ -1,0 +1,23 @@
+Improvements and fixes for version 2.1.4
+----------------------------------------
+
+- [Improved] Notification for errors occurring during the application of configuration changes has improved.
+- [Improved] Default export for Annotations is now Excel instead of CSV.
+- [Bug] Fixed issues with Undo & Redo for Trust Boundaries in Diagrams.
+- [Improved] Items in the Diagram palette now have tooltips to more easily discriminate betweeen instances.
+- [New] The Threat Model Properties panel now shows the version and the author of the Threat Model.
+- [New] Added Imported List panel to the Import ribbon. It shows the list of imported objects, specifying their source, and allowing to remove them selectively (like the unassigned ones).
+- [New] Added the possibility to generate more than one Word report at the same time, using different templates.
+- [Bug] Tooltips show '[]' before the object name when the selected object is not an Entity, a Flow or a Trust Boundary.
+- [Bug] File names including a '&' character are shown with an underline instead of the said character.
+- [Bug] Fixed crash in the Auto Gen Rules List panel when a Threat Type has a linked mitigation that has been removed incorrectly.
+- [Bug] Fixed crash in the Threat Type List panel when a Threat Type has a linked mitigation that has been removed incorrectly.
+- [Bug] Fixed crash while exporting a Knowledge Base when a Threat Type has a linked mitigation that has been removed incorrectly.
+- [Bug] Fixed crash while searching for threats in the Diagram panel, and there are not any.
+- [Bug] Fixed other crashes.
+- [Bug] Importing some SVG images to change the picture of an Entity may cause a crash.
+- [Bug] Merge templates containing different versions of the same objects may create duplicates or be partially correct.
+- [Bug] Generated file with Annotations does not contain those associated with the Threat Model.
+- [Bug] Auto threat generation rules for Mitigations are not saved in the Knowledge Base.
+- [Bug] Merge Dialog doesn't import Flow Templates and Trust Boundary Templates.
+- [Bug] Setting property of type "List of Keywords" to Read Only has no effect.

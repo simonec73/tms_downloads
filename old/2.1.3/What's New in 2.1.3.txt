@@ -1,0 +1,14 @@
+Improvements and fixes for version 2.1.3
+----------------------------------------
+
+- [New] Added versions to Threat Models.
+- [New] Added the information of the source for objects created from Knowledge Bases or from merged Threat Models.
+- [Bug] Solved various bugs causing crashes.
+- [Bug] Improved error management for DevOps.
+- [Improved] Moved DevOps buttons under Integrate ribbon.
+- [Bug] Opening a threat model containing Topics to be clarified, returns them as Notes.
+- [Bug] When a flow is created it is represented twice in the diagram.
+- [Bug] The context menu on the Diagram shows more actions than it should.
+- [Bug] Opening a Diagram may show the Trust Boundaries too big or moved to different locations.
+- [Bug] When copying and pasting a diagram or portion, the Trust Boundaries are wrong. 
+- [Bug] Recovery file ".recover" is saved with the right extension (for example, .TMJ), but with the wrong content (for example, .TM format).
