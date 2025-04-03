@@ -1,0 +1,10 @@
+{
+    "pages" :
+    [
+        {
+            "name" : "Auto Threat Generation",
+            "description" : "Common problems related to the Auto Threat Generation Extensions Library and how to address them.",
+            "url" : "https://threatsmanager.com/troubleshooting/auto-threat-generation/"
+        }
+    ]            
+}

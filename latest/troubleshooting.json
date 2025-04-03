@@ -1,0 +1,20 @@
+{
+    "pages" :
+    [
+        {
+            "name" : "Startup",
+            "description" : "Common problems during Threats Manager Studio's startup and how to address them.",
+            "url" : "https://threatsmanager.com/troubleshooting/startup/"
+        },
+        {
+            "name" : "Diagramming",
+            "description" : "Common Diagramming problems and how to address them.",
+            "url" : "https://threatsmanager.com/troubleshooting/diagramming/"  
+        },
+        {
+            "name" : "Reporting",
+            "description" : "Common problems related to Report generation and how to address them.",
+            "url" : "https://threatsmanager.com/troubleshooting/reporting/"
+        }
+    ]            
+}

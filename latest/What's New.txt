@@ -1,0 +1,7 @@
+Improvements and fixes for version 2.2.7
+----------------------------------------
+
+- [Bug] Setup files for the 2.2.6 release had problems which prevented execution in many cases.
+- [Improved] Updated references to the latest versions.
+- [New] Export for ADO in the Roadmap panel now asks if you want to embed the list of entities that are affected by the mitigation.
+- [Bug] Double click on a document does not load the diagrams.
