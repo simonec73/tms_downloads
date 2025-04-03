@@ -1,0 +1,19 @@
+Improvements and fixes for version 1.5.1
+----------------------------------------
+
+- [Bug] Under some conditions, the import of a .TM7 or .TB7 file may cause a crash.
+- [Bug] DevOps Extension: typing the token or inserting it before specifying the URL causes a crash.
+- [Bug] DevOps Extension: specifying the Token before the Url causes the Token to be cleared up.
+- [Bug] DevOps Extension: if a required state mapping is missing, then the application crashes.
+- [Bug] DevOps Extension: if two states are mapped to the same state, then two different sections are created.
+- [Improved] DevOps Extension: Mitigation's status is aligned with the one in the DevOps tracking system.
+- [Bug] DevOps Extension: selecting the parent Work Item from the Configuration dialog may not work in some conditions.
+- [Bug] Annotation Notes cannot be printed in Word reports.
+- [Improvement] Annotations export now does show the answers. 
+- [Improvement] Revised the visibility for the DevOps Extension Library.
+- [Bug] DevOps Extension: properties saved in Azure DevOps do not respect the new line.
+- [Bug] DevOps Extension: moving a Mitigation back to Unknown causes a crash.
+- [Bug] DevOps Extension: state and field assignments are not saved with the Threat Model.
+- [Bug] DevOps Extension: when opened for the first time, the Mitigations Kanban is empty.
+- [Bug] DevOps Extension: Active status should be mapped to In Progress.
+- [Bug] DevOps Extension: if a Work Item is deleted and then added again, the Threat Model crashes because the old ID is not found.

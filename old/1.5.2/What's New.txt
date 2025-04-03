@@ -1,0 +1,12 @@
+Improvements and fixes for version 1.5.2
+----------------------------------------
+
+- [Bug] If an iteration is removed and one or more Mitigations are assigned to it, it is not possible to load the file anymore without incurring in an error.
+- [Bug] Deleting an empty Question from the Question List panel causes a crash.
+- [Bug] BadImageFormatException when a file that is not an assembly is chosen to select the certificate.
+- [Bug] In case of IO errors while opening a Threat Model, a more significant message is shown.
+- [Bug] MSTMT: Item in Trust Boundary are not imported as part of the containing Trust Boundary.
+- [Bug] MSTMT: Generic elements in the template should be added if they do not correspond with the basic entities.
+- [Bug] DevOps: If you have a document connected to DevOps and then open a new one without DevOps, the buttons which should be disabled remain enabled.
+- [Bug] DevOps: When the Personal Access Token expires, the DevOps configuration is lost.
+- [New] Quantitative Risk Extension library.
