@@ -1,0 +1,67 @@
+Improvements and fixes for version 1.5.0
+----------------------------------------
+
+- [New] Added a feature to automatically calculate the Severity of Threat Events to simplify the evaluation of the consequences of implemented Mitigations.
+- [New] Added a panel to show the Threat Events having Severity different from the calculated one.
+- [Bug] Expand to Threat Events button in the Threat Event List does not work, if the tables are already expanded.
+- [New] Added Action to assign the same Status to all instances of a given Mitigation.
+- [New] Added Action to assign the same Strength to all instances of a given Mitigation.
+- [New] Added Action to assign the same Severity to all Threat Events associated to a given Threat Type.
+- [New] Added counter for Undefined Mitigations.
+- [New] Added counter for Approved Mitigations.
+- [New] Added counter for Planned Mitigations.
+- [New] Added counter for Existing Mitigations.
+- [New] Added counter for Implemented Mitigations.
+- [New] Added counter for Proposed Mitigations.
+- [Improved] Import of malformed TMT files generates an error which may not be clear.
+- [Bug] Some documents with DevOps configuration, like the Azure PaaS Core example and templates, cannot be opened.
+- [Bug] In the Importers Extension Library, imported text from Excel files may be prefixed with an apex.
+- [Improved] Added HitPolicy Add, to allow adding new objects no matter what.
+- [Improved] Added to the Excel Importer the possibility to filter rows based on content.
+- [Improved] Added to the Excel Importer the possibility to define mapping rules.
+- [Bug] Properties marked with DoNotPrint are still printed in Word reports.
+- [New] Created an Excel Exported which gets the configuration from Json files.
+- [Improved] Word Report generation has been completely refactored, and now new placeholders can be introduces with Extensions.
+- [New] Added a placeholder to create grouped lists of Mitigations in Word Reports.
+- [New] Added flag Read Only to Property Types. This flag limits editing in the Item Editor.
+- [New] Added placeholder ListItemTemplates for creating Word Reports.
+- [New] Added placeholder ListItemTemplateNames for creating Word Reports.
+- [Bug] When a new reference Word document is selected, the list of the placeholders is not cleared up.
+- [Improved] Now Annotations are printable in Word Report.
+- [New] Added an action to apply Property Schemas to single objects.
+- [New] Added an action to remove Property Schemas from single object.
+- [Bug] Scope for Mitigations in Property Schemas should not be called Standard Mitigations but simply Mitigations.
+- [Bug] Property Schemas having name including '&' are shown in the Item Editor with an underscore instead of the & character.
+- [New] Added the Weakness List, to manage Weaknesses.
+- [New] Added an action to perform bulk association and disassociation of Mitigations to Threats, Weaknesses or Vulnerabilities.
+- [Improved] Importing a Template now merges the Auto Gen Rules.
+- [Bug] Threat Type Mitigation properties are not imported as part of a merge from a Template or a Threat Model.
+- [New] Added an action to apply the Auto Gen Rule assigned to the Threat Type or Weakness object to the selected associated Mitigation.
+- [New] Added an action to apply the Auto Gen Rule assigned to the Mitigations associated to the selected Threat Type or Weakness.
+- [New] Added an action to copy the Auto Gen Rules assigned Threat Types, Weaknesses and related mitigations.
+- [New] Added an action to paste the copied Auto Gen Rules to Threat Types, Weaknesses and related mitigations.
+- [Bug] Questions do not generate Annotations for the Threat Model.
+- [Improved] Excel Importer now allows to automatically remove all Threat Types with no associated Mitigation, and all Mitigations with no associated Threat Type.
+- [Bug] Creating a New document without closing the previous one, may cause the application to crash.
+- [Bug] Generation of a Word Report may fail if it includes a chart when no data is available.
+- [Bug] Properties names having '&' in the name are shown in the Item Editor with an underscore instead of the & character.
+- [Bug] In Roadmap the roadmap palette show an horizontal scroll bar even if it is not necessary.
+- [Bug] Context menu does not work within Auto Threat Gen panel.
+- [Bug] Existing properties do not raise events when their value is changed.
+- [New] Added placeholder ListShortTermMitigations for creating Word Reports.
+- [New] Added placeholder ListMidTermMitigations for creating Word Reports.
+- [New] Added placeholder ListLongTermMitigations for creating Word Reports.
+- [New] Added placeholder ListShortTermMitigationsNoThreats for creating Word Reports.
+- [New] Added placeholder ListMidTermMitigationsNoThreats for creating Word Reports.
+- [New] Added placeholder ListLongTermMitigationsNoThreats for creating Word Reports.
+- [Bug] In some cases the diagram is corrupted, and even the repair fails.
+- [Bug] Export of the Roadmap as CSV creates a malformed file.
+- [New] Added the possibility to export Short Term, Mid Term and Long Term Mitigations as CSV file to be imported in Azure DevOps.
+- [Improved] Now Threats Manager Studio raises an alert when the available resources are too low and it is better to restart it.
+- [Bug] Threat Models with JSON file having more than 64 levels of depth cannot be loaded.
+- [Bug] .TM7 or .TB7 files with images that are not Base64-encoded cannot be imported.
+- [Improved] Now it is possible to tag Top Threat Event generation rules and Mitigation association rules, to limit the number of Threat Events generated and Mitigations associated when there is the need to perform a simpler Threat Model activity.
+- [Bug] Importing an Excel file when a Threat or Mitigation List is open may cause TMS to crash. 
+- [Bug] DevOps extension cannot connect to Azure DevOps.
+- [Bug] DevOps extension crashes when the type of Work Item used is not mapped to all supported states, if one of the unsupported ones is used.
+- [Bug] Some Property Schemas are exported to Templates even if it should not be possible.

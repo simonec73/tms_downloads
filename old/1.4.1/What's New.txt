@@ -1,0 +1,13 @@
+Improvements and fixes for version 1.4.1
+----------------------------------------
+
+- [Improved] Updated embedded Web Browser to be based on Edge Chromium.
+- [Bug] Crash on load due to empty Threat Model.
+- [Bug] Crash when evaluating Auto Mitigation assignment rules.
+- [Bug] Context menus in Item Editor do not work.
+- [Bug] Create Entity Template form does not have enough space for the icons.
+- [Bug] Open and Save dialogs change the current folder when they should not.
+- [Bug] In the Threat Event List, changes of the Control Type for a Mitigation does not update the value in the table.
+- [Bug] Threat Models stored in network files are not fully supported, but there is nothing preventing using them. Now TMS raises warning "The selected document cannot be opened, most probably because its location is not supported.".
+- [Bug] Annotations export does not generate a correct CSV.
+- [Bug] Entities having name containing the word "Process" are wrongly identified as violating the Default Name Quality rule. 

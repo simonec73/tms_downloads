@@ -1,0 +1,40 @@
+Improvements and fixes for version 1.4.2
+----------------------------------------
+
+- [Bug] Threats Manager Studio occupies a CPU core forever, as soon as a file has been opened.
+- [Bug] JSON Serialization of Threat Models and Templates does not produce a correct Unicode UTF-16 file.
+- [Bug] Opening a Diagram may crash the Studio if more Trust Boundaries refer to the same parent.
+- [Improved] Opening a Threat Model may generate an error message that may be too generic, when the containing directory is missing.
+- [Bug] Openining or saving a file when you do not have the required rights may cause a crash.
+- [Bug] False Positive List dialog may crash if no Analyzer is selected.
+- [Bug] Item editor is not showing correctly the Threat Event Mitigation name in the Roadmap panel.
+- [Bug] Item editor may crash when the context menu for Threat Events is empty.
+- [Bug] Corrupted reference Word documents are not managed correctly.
+- [Bug] Opening the export to Word feature when the reference Word document is already opened in Word does not generate a clear message.
+- [Bug] Setting a blank Schema name or namespace causes the application to crash.
+- [Bug] Export Template would allow to specify no name for the Template, but then fails.
+- [Bug] IterationInfo is unknown when a TM is loaded.
+- [Bug] User objects leak may cause Threats Manager Studio to crash after some use.
+- [New] Added the possibility to remove Iteration association from a single Mitigation.
+- [New] Added the possibility to remove Iteration association from all Mitigations.
+- [Improved] The Threat Actor List is now visible only in Pioneer mode.
+- [Improved] The Risk Trend panel is now visible only in Pioneer mode only. This is a temporary measure that will be addressed with v1.5.0.
+- [New] Added an Extension to import Excel files to create Threat Types, Mitigations, Entity Types and other objects.
+- [Bug] Exported templates include Non Exportable Property Schemas.
+- [Bug] All Standard Mitigations and Threat Event Mitigations are shown in the Annotations Panel, even when there is no annotation or when it should be filtered out.
+- [Bug] Annotations panel does not show annotations assigned to Diagrams.
+- [Improved] Asked Via and Answered Via fields in Topics to be clarified now provide two buttons for common answers (email/call).
+- [Improved] Annotations now show the object they are applied to.
+- [Improved] Annotations section is now near the bottom in the Item Editor.
+- [Bug] Word Report creates properties even if they are marked as "Do not print".
+- [Bug] Some placeholders in the Word Report extension are missing the icon.
+- [Bug] Reduced the possibility of getting an Out of Memory exception while serializing or deserializing Json files, including Threat Models.
+- [New] Added a functionality to fix automatically eventual problems with diagrams due to difference in DPIs.
+- [Improved] Annotations Text now has spell check and allows to open the Text Editor.
+- [Improved] Added the possibility to filter objects with an Annotation having a specific text, considering both the Text or the Answer.
+- [Improved] Added the possibility to filter objects with a Review Note having a specific text.
+- [Bug] Removal of an Annotation from the Annotations panel does not properly clean up the panel itself.
+- [Bug] Removal of a Review Note from the Review Notes panel does not properly clean up the panel itself.
+- [New] Added Counters for Annotations.
+- [Improved] The request to choose if the latest version of the document has been removed, to make loading more efficient.
+- [Bug] Dirty flag may be shown at start, unnecessarily.

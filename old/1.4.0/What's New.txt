@@ -1,0 +1,45 @@
+Improvements and fixes for version 1.4.0.0
+-------------------------------------------
+
+- [New] Now Extensions can have configuration in the Options page. 
+- [New] Added possibility to create Templates as Json files (extension .TMK). 
+- [Improved] Added a flag to mark Property Schemas as Not Exportable to Templates.
+- [Bug] Property Schema List does not allow to change Visibility of a Property Schema. 
+- [Improved] Added a flag to mark a Property Type as Printable. This allows to control which properties should be surfaced to Reports.
+- [Bug] Clicking Get Full Rights button in Severity List causes TMS to crash if there is no selected row.
+- [Improved] Better memory management reduces crashes due to exhaustion of GDI handles.
+- [Bug] TMT .TM7 documents with flows having empty names cannot be imported.
+- [New] Quality Extension Library now allows to annotate every object.
+- [New] Quality Extension Library now allows to automatically generate questions based on the Threat Model.
+- [Bug] Auto Gen Rules: Dragging and dropping a node related to Item Templates when no Item Template is defined causes a crash.
+- [Improved] It is now possible to change the position of the label for Flows in Diagrams.
+- [Bug] Overwrites of existing files may occasionally create malformed files.
+- [Bug] Mitigations status pie chart in Overview Dashboard is not updated during the Refresh.
+- [Improved] Added possibility to copy Charts to Clipboard.
+- [Improved] Addressed minor issues with Hi/Lo DPI screens.
+- [New] Added an Action to copy a single Threat Event and all its associated Mitigations.
+- [New] Added a flag in the Settings to prevent loading Help and Troubleshooting pages (for privacy/security concerns).
+- [Improved] Item Editor shows the context menu for Threat Events.
+- [Improved] Added buttons to the Image Editor to make more explicit how to change icons for Entities.
+- [Improved] Roadmap Panel shows the selected Threat Event.
+- [Improved] Acceptable Risk level in Roadmap now can be normalized, to make it less dependent from the complexity of the Threat Model.
+- [Bug] Entity icons in Diagrams are too small when the DPI factor is 1.5.
+- [Improved] Mitigations in Roadmap now have context menu.
+- [Improved] Select Image dialog to change the picture shown for Entities, now has buttons, to make the interface more intuitive.
+- [Improved] Effectiveness of Mitigations in the Roadmap panel now is shown explicitly.
+- [Improved] The Roadmap panel can show properties from other Extensions libraries (like DevOps).
+- [Improved] Item Editor shows the Threat Type for Threat Events, with the possibility to open it in an Item Editor dialog.
+- [Improved] Context menus have been rationalized.
+- [Improved] Item Editor shows the Threat Events associated to the current Threat Type, with the possibility to open them in an Item Editor dialog.
+- [Improved] Roadmap panel allows to filter data based on specific properties.
+- [Improved] Context menu Actions now are evaluated every time a context menu is shown, to determine if they should be visible or not.
+- [Improved] Saving a file with Smart Save now updates the original file, to make easier distributing it.
+- [Bug] Lock could not be acquired when opening another Threat Model after a first was opened.
+- [Improved] Item Editor shows the Threat Event for Threat Event Mitigations and Scenarios, with the possibility to open it in an Item Editor dialog.
+- [Improved] Item Editor shows the Threat Type for Threat Type Mitigations, with the possibility to open it in an Item Editor dialog.
+- [Improved] Item Editor shows the Mitigation for Threat Type and Event Mitigations, with the possibility to open it in an Item Editor dialog.
+- [New] Item Editor includes button to refresh.
+- [Bug] Item Editor dialogs are not read-only for Management and Business Execution Modes.
+- [Bug] Lines may appear as disconnected from any Entity in some situations, when moving from a screens with different DPIs.
+- [Improved] Changed message boxes icons to be more significant.
+- [Bug] In some conditions, editing the title of the Diagram is not reflected in the Ribbon.
