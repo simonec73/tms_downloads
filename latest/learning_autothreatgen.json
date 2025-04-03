@@ -1,0 +1,39 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Advanced",
+            "topics" :
+            [
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Auto Threat Generation",
+                            "description" : "The Automatic Threat Generation Extensions Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/auto-threat-generation/"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "Expert",
+            "topics" :
+            [
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Auto Threat Generation rules definition",
+                            "description" : "How to define your own Automatic Threat Generation and Mitigation Association rules.",
+                            "url" : "https://threatsmanager.com/training/expert/extensions/autothreatgen-rules-definition/"
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}

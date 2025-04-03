@@ -1,0 +1,294 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Introductive",
+            "topics" :
+            [
+                {
+                    "name" : "Start Here",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Install & Configure",
+                            "description" : "How to install and configure Threats Manager Studio for the first time.",
+                            "url" : "https://threatsmanager.com/training/intro/start-here/install-and-configure/"
+                        },
+                        {
+                            "name" : "Execution Mode",
+                            "description" : "How to change Threats Manager Studio to be more aligned with your needs.",
+                            "url" : "https://threatsmanager.com/training/intro/start-here/execution-mode/"
+                        },
+                        {
+                            "name" : "Extensions Configuration",
+                            "description" : "How to configure Threats Manager Studio to load your Extension libraries.",
+                            "url" : "https://threatsmanager.com/training/intro/start-here/extensions-configuration/"
+                        },
+                        {
+                            "name" : "Smart Save Configuration",
+                            "description" : "How to configure the way Threats Manager Studio saves the Threat Models.",
+                            "url" : "https://threatsmanager.com/training/intro/start-here/smart-save-configuration/"
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Basic Concepts",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Threat Model",
+                            "description" : "What is a Threat Model and why it is so important.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/threat-model/"
+                        },
+                        {
+                            "name" : "Entities",
+                            "description" : "This lesson describe the various entities, what they are and how to use them.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/entities/"
+                        },
+                        {
+                            "name" : "Data Flows",
+                            "description" : "Introduction to the Data Flows: what they are and how they work in the Platform.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/flows/"
+                        },
+                        {
+                            "name" : "Trust Boundaries",
+                            "description" : "This lesson introduces the Trust Boundaries in the Platform.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/trust-boundaries/"
+                        },
+                        {
+                            "name" : "Threats",
+                            "description" : "Introduction to Threats, Threat Types and Threat Events.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/threats/"
+                        },
+                        {
+                            "name" : "Mitigations",
+                            "description" : "Introduction to Mitigations, Standard Mitigation and Assigned Mitigations.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/mitigations/"
+                        },
+                        {
+                            "name" : "Item Editor",
+                            "description" : "Introduction to how to edit most properties of the various objects.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/item-editor/"
+                        },
+                        {
+                            "name" : "Tooltips",
+                            "description" : "Introduction to the advanced tooltips feature.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/tooltips/"
+                        },
+                        {
+                            "name" : "Short Form of the Object Types",
+                            "description" : "Introduction to the short form to represent the Object Types.",
+                            "url" : "https://threatsmanager.com/training/intro/basic/short-form/"
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Diagramming",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Diagramming basics",
+                            "description" : "How to create a Diagram and the different types of entities.",
+                            "url" : "https://threatsmanager.com/training/intro/diagramming/diagramming-basics/"
+                        },
+                        {
+                            "name" : "Diagrams",
+                            "description" : "The main ways to create and work with Diagrams.",
+                            "url" : "https://threatsmanager.com/training/intro/diagramming/diagrams/"
+                        },
+                        {
+                            "name" : "The Existing Object palette",
+                            "description" : "How to reuse objects between Diagrams using the Existing Objects palette.",
+                            "url" : "https://threatsmanager.com/training/intro/diagramming/the-existing-objects-palette/"
+                        },
+                        {
+                            "name" : "Icons customization",
+                            "description" : "How to change the icon for the Entities.",
+                            "url" : "https://threatsmanager.com/training/intro/diagramming/icons-customization/"
+                        }
+                    ]            
+                },
+                {
+                    "name" : "Lists",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "External Interactor List",
+                            "description" : "Introduction to the External Interactor List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/external-interactor-list/"
+                        },
+                        {
+                            "name" : "Process List",
+                            "description" : "Introduction to the Process List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/process-list/"
+                        },
+                        {
+                            "name" : "Data Store List",
+                            "description" : "Introduction to the Data Store List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/data-store-list/"
+                        },
+                        {
+                            "name" : "Flow List",
+                            "description" : "Introduction to the Flow List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/flow-list/"
+                        },
+                        {
+                            "name" : "Trust Boundary List",
+                            "description" : "Introduction to the Trust Boundary List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/trust-boundary-list/"
+                        },
+                        {
+                            "name" : "Threat Event List",
+                            "description" : "Introduction to the Threat Event List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/threat-event-list/"
+                        },
+                        {
+                            "name" : "Mitigation List",
+                            "description" : "Introduction to the Mitigation List.",
+                            "url" : "https://threatsmanager.com/training/intro/lists/mitigation-list/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "Advanced",
+            "topics" :
+            [
+                {
+                    "name" : "Concepts",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Overview Dashboard",
+                            "description" : "How to get a comprehensive view of the risks of the analyzed solution and how to fix them.",
+                            "url" : "https://threatsmanager.com/training/advanced/concepts/overview-dashboard/"
+                        },
+                        {
+                            "name" : "Item Templates",
+                            "description" : "What are the Item Templates, how to create and use them.",
+                            "url" : "https://threatsmanager.com/training/advanced/concepts/item-templates/"
+                        },
+                        {
+                            "name" : "Templates",
+                            "description" : "What are the Templates and how to use them.",
+                            "url" : "https://threatsmanager.com/training/advanced/concepts/templates/"
+                        },
+                        {
+                            "name" : "Merge Threat Models and Templates",
+                            "description" : "How to compare and merge Threat Models and Templates with the current Threat Model.",
+                            "url" : "https://threatsmanager.com/training/advanced/concepts/merge-threat-models-and-templates/"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Threats and Mitigations",
+                    "lessons" :
+                    [
+                        {
+                            "name" : "The Threat Types palette",
+                            "description" : "The palette to associate Threats to objects by dragging them in the Diagram tool.",
+                            "url" : "https://threatsmanager.com/training/advanced/threats-and-mitigations/the-threat-types-palette/"
+                        },
+                        {
+                            "name" : "Roadmap",
+                            "description" : "How to define what Mitigations should be implemented, and when to implement them.",
+                            "url" : "https://threatsmanager.com/training/advanced/threats-and-mitigations/roadmap/"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Reporting",
+                    "lessons" :
+                    [
+                        {
+                            "name" : "Word Report",
+                            "description" : "How to automatically generate a Threat Modeling Report for Microsoft Word.",
+                            "url" : "https://threatsmanager.com/training/advanced/reporting/word-report/"
+                        },
+                        {
+                            "name" : "Word Template",
+                            "description" : "How to create a Microsoft Word template to be used for generating Threat Modeling Reports.",
+                            "url" : "https://threatsmanager.com/training/advanced/reporting/word-template/"
+                        },
+                        {
+                            "name" : "Excel Reports",
+                            "description" : "How to automatically generate Threat Modeling Reports for Microsoft Excel.",
+                            "url" : "https://threatsmanager.com/training/advanced/reporting/excel-reports/"
+                        }                    
+                    ]
+                },
+                {
+                    "name" : "Lists",
+                    "lessons" :
+                    [
+                        {
+                            "name" : "Threat Type List",
+                            "description" : "Introduction to the Threat Type List.",
+                            "url" : "https://threatsmanager.com/training/advanced/lists/threat-type-list/"
+                        },
+                        {
+                            "name" : "Known Mitigation List",
+                            "description" : "Introduction to the Known Mitigation List",
+                            "url" : "https://threatsmanager.com/training/advanced/lists/known-mitigation-list/"
+                        },
+                        {
+                            "name" : "Item Template List",
+                            "description" : "Introduction to the Item Template List",
+                            "url" : "https://threatsmanager.com/training/advanced/lists/item-template-list/"
+                        },
+                        {
+                            "name" : "Severity List",
+                            "description" : "Introduction to the Severity List",
+                            "url" : "https://threatsmanager.com/training/advanced/lists/severity-list/"
+                        },
+                        {
+                            "name" : "Strength List",
+                            "description" : "Introduction to the Strength List.",
+                            "url" : "https://threatsmanager.com/training/advanced/lists/strength-list/"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Extensions and Extensibility",
+                            "description" : "What are the Extensions and why they are an important aspect of Threats Manager Studio.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/extensions-and-extensibility/"
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type" : "Expert",
+            "topics" :
+            [
+                {
+                    "name" : "Metadata",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Property Schemas",
+                            "description" : "How to work with metadata.",
+                            "url" : "https://threatsmanager.com/training/expert/metadata/property-schemas/"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Creating Templates",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Templates Creation",
+                            "description" : "How to create Templates.",
+                            "url" : "https://threatsmanager.com/training/expert/templates/templates-creation/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

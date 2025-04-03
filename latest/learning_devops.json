@@ -1,0 +1,22 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Advanced",
+            "topics" :
+            [
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "DevOps",
+                            "description" : "The DevOps Extension Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/devops/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

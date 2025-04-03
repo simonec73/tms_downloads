@@ -1,0 +1,22 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Advanced",
+            "topics" :
+            [
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Microsoft Threat Modeling Tool Importer",
+                            "description" : "The Microsoft Threat Modeling Tool Importer Extensions Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/tmt-importer/"
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}

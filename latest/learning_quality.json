@@ -1,0 +1,32 @@
+{
+    "sections" : 
+    [
+        {
+            "type" : "Advanced",
+            "topics" :
+            [
+                {
+                    "name" : "Extensions",
+                    "lessons" : 
+                    [
+                        {
+                            "name" : "Quality",
+                            "description" : "The Quality Dashboard, part of the Quality Extensions Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/quality/"
+                        },
+                        {
+                            "name" : "Annotations",
+                            "description" : "The Annotations, part of the Quality Extensions Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/annotations/"
+                        },
+                        {
+                            "name" : "Calculated Severity",
+                            "description" : "The Calculated Severity feature, part of the Quality Extensions Library.",
+                            "url" : "https://threatsmanager.com/training/advanced/extensions/calculated-severity/"
+                        },
+                    ]
+                }
+            ]
+        }
+    ]
+}
