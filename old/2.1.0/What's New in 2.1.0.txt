@@ -1,0 +1,40 @@
+Improvements and fixes for version 2.1.0
+----------------------------------------
+
+- [Improved] Upgraded to .NET Framework 4.8.1 from 4.7.2. Removed support for deprecated .NET Core 3.1.
+- [Improved] Upgraded all dependencies to the latest versions available.
+- [Improved] Moved the buttons related to the Knowledge Base to a specialized Ribbon.
+- [New] Added Undo and Redo capabilities.
+- [Bug] Mitigation Generation Rules not specifying a status cause a crash.
+- [Bug] Removal of a Property Schema does not cleanup the objects completely.
+- [Improved] Aligned the File button in the ribbon with the other buttons.
+- [Improved] Renamed "Templates" to "Knowledge Bases" to make it more correct.
+- [Bug] Removal of Severities did not consider all the possible places where they can be applied.
+- [Bug] TMT Import: AND and OR operators in decision trees are not recognized.
+- [Bug] TMT Import: Custom Threat Types are imported with non-defined severity.
+- [Bug] TMT Import: Auto Threat Gen rules assign the wrong namespace to some properties.
+- [Improved] Removed the Trust Boundary blocking marker, to facilitate resizing.
+- [Improved] Made the Effort configuration global.
+- [Improved] Made the Calculated Severity configuration global.
+- [Bug] Sometimes multiple rows with the same text are created in the Item Editor, instead of a single one. When that happens and the user edits both of them, TMS enters a loop that can be broken only by killing it.
+- [Bug] Adding a Threat Event to the Threat Model fails with an error.
+- [Bug] The list of Threat Types for the Word report shows the severity of the Threat Type instead of the top severity of the related Threat Events. 
+- [Improved] Item Editor now has the hyperlinks to associated entities.
+- [New] Auto Generation rules for entering or exiting Trust Boundaries. 
+- [Improved] Redistributed the space for the "Associate a Mitigation to the Threat Event" dialog to cope with longer mitigation names.
+- [Improved] Threat Type pie charts in the Overview panel now allow to see and copy the threat types in each severity category.
+- [New] Added the possibility to extend every Panel with custom buttons.
+- [New] Added the possibility to bulk enable and disable Annotations from most panels.
+- [New] Added the possibility to bulk apply and remove Schemas to objects from most panels.
+- [New] Added the following capabilities to the Threat Type List: Bulk update of severity.
+- [New] Added the following capabilities to the Threat Event List: Bulk update of severity, Bulk remove of all objects.
+- [New] Added the following capabilities to the External Interactor List: Change template of multiple entities, Apply Auto Gen Rules.
+- [New] Added the following capabilities to the Process List: Change template of multiple entities, Apply Auto Gen Rules.
+- [New] Added the following capabilities to the Data Store List: Change template of multiple entities, Apply Auto Gen Rules.
+- [New] Added the following capabilities to the Flow List: Change template of multiple flows, Apply Auto Gen Rules.
+- [New] Added the following capabilities to the Trust Boundary List: Change template of multiple trust boundaries.
+- [New] Added the possibility to remove a Property Schema from all objects, from the Property Schema List.
+- [New] Added a context menu action allowing to change direction of flows.
+- [Bug] Importing a TB7 file with an entity marked as hidden results in wrong threat generation rule creation.
+- [Bug] Importing a TM7 or a TB7 file with a different structure than expected may lead to partial import. 
+- [Bug] Loops in the parent-child relationships of the Trust Boundaries cause TMS to crash silently.

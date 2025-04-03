@@ -1,0 +1,18 @@
+Improvements and fixes for version 2.1.2
+----------------------------------------
+
+- [New] Added button "Toggle all Panels" to the Diagram ribbon. When clicked, it opens all Maker Item Panels at the same time. Click it again to close them.
+- [Bug] Changes to annotations after their creation are not persisted.
+- [New] Added support to policies to force TMS behavior required by the organization.
+- [New] Added the ability to duplicate and convert Entities.
+- [New] Added the ability to automatically add to a Diagram all missing Flows belonging to a given Entity.
+- [New] Added buttons to remove Entities and Flows not in any Diagram.
+- [Bug] Revision of the DevOps Extensions Library to support Undo/Redo.
+- [Bug] If the name of a Threat Event is undefined, PaletteItem causes a crash.
+- [Bug] If the Word Reference File is located in a different folder than the one identified by the relative path, TMS crashes.
+- [Bug] If you delete an object, closing an Item Editor for an object using the first as Parent causes a crash.
+- [Bug] Copying and Pasting Threat Events may crash if the target already has one of the result Threat Events.
+- [Bug] UI may crash if there are empty Annotations.
+- [Bug] Replaced term "Template" with "Knowledge Base" for the Import and Export KB dialogs.
+- [Bug] Fixed support of Weaknesses for the Import and Export KB Dialog.
+- [Bug] Import Knowledge Base does not show correctly the status of the various categories.

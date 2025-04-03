@@ -1,0 +1,20 @@
+Improvements and fixes for version 2.1.1
+----------------------------------------
+
+- [Bug] TMS crashes during opening. Trying again, it opens correctly.
+- [Bug] Report generation fails with error "Reference document may be corrupted or not a Word document." independently from the Word document used.
+- [Bug] Disabling telemetry in the dialog shown when opening TMS does not persist the choice.
+- [Bug] The dialog to insert the password while saving or opening an encrypted file does not handle the ENTER key correctly.
+- [Bug] TMS crashes when opening an encrypted (.TME) file.
+- [Bug] Undoing a change to a Diagram may cause Trust Boundaries to change incorrectly.
+- [Bug] Assumptions defined in Threat Models generated with versions earlier than 2.1.0 are missing when opened with TMS 2.1.0.
+- [Bug] Show Undo/Redo Operations debug dialog does not move correctly among the various operations.
+- [Bug] Opening objects in Item Editor creates undoable actions, even if no value has changed.
+- [Bug] After opening the Threat Event List or the Mitigation List, the Item Editor is not updated the first time a row is selected.
+- [Bug] Fixed potential crash closing KnownMitigationListPanel.
+- [Bug] Crash without details when Extensions libraries are located in a non-reachable location.
+- [Bug] Random crashes due to overlap of scopes overlap related to Undo/Redo.
+- [Bug] Fixed potential crash while loading extensions.
+- [Bug] Derived Item Templates do not have the properties associated to the source item.
+- [Improvement] Item Templates can get Property Schemas assigned.
+- [Bug] Fixed various bugs received with telemetry.
