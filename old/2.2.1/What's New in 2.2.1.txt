@@ -1,0 +1,8 @@
+Improvements and fixes for version 2.2.1
+----------------------------------------
+
+- [Bug] Fixed a bug that caused crashes when using Annotations.
+- [Bug] Fixed a bug that caused crashes when changing the size of the icon.
+- [Bug] Fixed issues with showing in the Item Editor already selected rows.
+- [Bug] Solved issues leading to crashes due to resource exhaustion.
+- [New] Added the concept of Specialized Mitigations.

@@ -1,0 +1,14 @@
+Improvements and fixes for version 2.2.2
+----------------------------------------
+
+- [Improved] Clarified the message raised when TMS misses necessary Extensions to load a threat model.
+- [Bug] Copy and Convert entities changing the template does not apply the icon.
+- [Bug] Topics to be clarified occupy too much space in the Annotation dialog.
+- [Bug] Fixed a memory leak which caused the application to crash after a long period of use.
+- [Bug] Selecting a certificate store that does not exist in the Certificate Selection dialog causes the application to crash.
+- [Bug] Fixed "Cannot start explicit operation while tracking is disabled" exception.
+- [Bug] Fixed crash on Undo.
+- [Bug] Fixed a crash in Diagrams due to the Markers.
+- [Bug] Fixed an issue preventing the creation of a PDF report using the Quality Dashboard if the name of an item is null or empty. 
+- [Bug] Fixed crashes when items have empty name.
+- [Bug] Fixed crashes during the creation of the Word Report when the threat model is not complete.

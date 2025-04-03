@@ -1,0 +1,18 @@
+Improvements and fixes for version 2.2.3
+----------------------------------------
+
+- [Improved] Added the possibility to filter Mitigations for any text in the Associate Mitigations dialog.
+- [Bug] If you open the context menu for any marker shown in Diagrams and then choose an action, nothing happens.
+- [Bug] TMS sometimes crashes when opening a panel.
+- [Improved] Added the ribbon to the Threat Model panel.
+- [New] Added property Url.
+- [New] Added property Url List.
+- [New] Added property Date.
+- [Improved] Removed collapsible groups in the Item Editor, modernizing the UI and improving the user experience.
+- [Bug] Threat Model annotations cannot be opened from the Item Editor.
+- [Bug] Fixed resource release issues related to the Question List panel.
+- [Bug] Some properties in the Item Editor do not show the tooltips with the description of the Property Type.
+- [Bug] Various issues remaining from Hi-DPI support, including incorrect scaling of the diagrams in generated Word Reports.
+- [Improved] Updated the dependencies to the latest versions.
+- [Bug] Fixed bugs in Word document generation which caused the creation of charts with wrong values.
+- [Bug] Fixed bugs in Word document generation which prevented the creation of tables in some circumstances.
